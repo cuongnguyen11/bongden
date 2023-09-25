@@ -22,7 +22,17 @@ class showController extends Controller
 
         Storage::disk('local')->delete('/frontend/mail.blade.php');
 
-        $content = $request->content;
+        $table = '{list_product}';
+
+
+        $convert = ['{name}', '{address}', '{email}', '{phone_number}', '{list_product}'];
+
+        $change = ["<?= '$name'??'{name}' ?>", "<?= $address??'{address}' ?>", "<?= $email??'{email}' ?>", "<?= $phone_number??'{phone_number}' ?>", $table];
+
+
+        $content = html_entity_decode($request->content);
+
+        $content =  str_replace($convert, $change, $content);
 
         Storage::disk('local')->put('/frontend/mail.blade.php',  $content);
 
