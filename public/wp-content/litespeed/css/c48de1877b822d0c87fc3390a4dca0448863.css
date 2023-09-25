@@ -1,0 +1,1720 @@
+.box-text {
+  padding-top: 0.7em !important;
+  padding-bottom: 0.7em !important;
+}
+.badge.post-date {
+  display: none !important;
+}
+.so_so_tlc {
+  wdith: 100%;
+  height: 140px;
+  background-image: url("../../uploads/2020/08/bg-so-do-tlc-home.jpg");
+  background-repeat: repeat-x;
+}
+.header-bottom-nav.nav-line-bottom > li > a:before,
+.header-bottom-nav.nav-line-grow > li > a:before,
+.header-bottom-nav.nav-line > li > a:before,
+.header-bottom-nav.nav-box > li > a:hover,
+.header-bottom-nav.nav-box > li.active > a,
+.header-bottom-nav.nav-pills > li > a:hover,
+.header-bottom-nav.nav-pills > li.active > a {
+  background-color: red !important;
+}
+.woocommerce-layout__header {
+  display: none !important;
+}
+.badge-container {
+  display: none !important;
+  right: 0 !important;
+  top: 0 !important;
+  left: auto;
+  margin: 0 !important;
+}
+.badge {
+  height: auto !important;
+  width: auto !important;
+}
+.badge-inner {
+  height: auto !important;
+  width: auto !important;
+  padding: 6px 3px !important;
+  font-size: 12px !important;
+}
+.is-divider {
+  display: none !important;
+}
+.widget_nav_menu .widget-title {
+  display: block;
+  background: #005186;
+  padding: 10px 20px;
+  color: #fff;
+}
+.menu-danh_muc_doc_den_led_tlc-container {
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+.menu-danh_muc_doc_den_led_tlc-container ul li.last-child {
+  border-bottom: 1px solid #ececec !important;
+}
+.menu-danh_muc_doc_den_led_tlc-container ul li a {
+  color: #252525;
+  padding: 6px !important;
+}
+.menu-danh_muc_doc_den_led_tlc-container ul li a:hover {
+  color: #00f;
+}
+table.infomation_led_tlc_lighting tbody tr:nth-child(2n + 0) {
+  background: #ececec;
+}
+table.infomation_led_tlc_lighting tbody tr td {
+  padding: 5px;
+  color: #000;
+}
+table.bang_cong_suat_den_12v_24v tr:first-child {
+  font-weight: 600;
+}
+table.bang_cong_suat_den_12v_24v td {
+  color: #000;
+}
+table.bang_cong_suat_den_12v_24v td:first-child {
+  font-weight: 600;
+  padding-left: 5px;
+}
+.product-info {
+  padding-top: 0 !important;
+}
+.product-info h1.product-title {
+  color: #00427e !important;
+  font-size: 30px !important;
+}
+.price ins span {
+  color: red !important;
+}
+.cart {
+  margin-bottom: 2px !important;
+}
+.product-short-description table.detail_led_tlc_product {
+  max-width: 100%;
+}
+.product-short-description table.detail_led_tlc_product td {
+  color: #000 !important;
+  font-size: 12px !important;
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+  float: left;
+}
+.product-short-description table.detail_led_tlc_product td:first-child {
+  font-weight: 600;
+  width: 40%;
+}
+.product-small .box {
+  border: 1px solid #ccc;
+}
+.flickity-button-icon {
+  color: blue !important;
+}
+.product-title a {
+  font-size: 14px;
+  color: #000;
+}
+.box-text {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+.widget_nav_menu .widget-title {
+  display: block;
+  background: #005186;
+  padding: 10px 20px;
+  color: #fff;
+}
+.menu-menu-doc-container,
+.menu-danh-muc-theo-hang-container {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.menu-menu-doc-container ul li.last-child,
+.menu-danh-muc-theo-hang-container ul li.last-child {
+  border-bottom: 1px solid #ddd !important;
+}
+.menu-menu-doc-container ul li a,
+.menu-danh-muc-theo-hang-container ul li a {
+  color: #252525;
+  margin-left: 5px;
+}
+.menu-menu-doc-container ul li a:hover,
+.menu-danh-muc-theo-hang-container ul li a:hover {
+  color: #00f;
+}
+.grid-tools a {
+  background: blue !important;
+}
+.product_type_simple {
+  background: blue !important;
+}
+.nav-column li > a,
+.nav-dropdown > li > a {
+  padding: 8px 15px !important;
+  text-transform: uppercase !important;
+  font-size: 14px !important;
+}
+.nav-dropdown {
+  padding: 10px 0 10px !important;
+}
+.nav > li > a {
+  font-size: 13.5px !important;
+  letter-spacing: 0 !important;
+}
+#menu-item-5438 .nav-dropdown,
+#menu-item-5454 .nav-dropdown {
+  min-width: 330px !important;
+}
+.home013 {
+  padding-left: 35px !important;
+}
+.home022 .box-image {
+  width: 25% !important;
+  float: left !important;
+  margin-right: 10px;
+}
+.home022 .box-image .image-cover {
+  padding-top: 100% !important;
+}
+.home022 .box-text {
+  font-size: 13px;
+  text-align: left !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.home021.row-grid .col,
+.home022.row-grid .col {
+  padding-bottom: 10px !important;
+}
+.home022 .col {
+  padding: 0 15px 24px !important;
+}
+.home032 {
+  padding: 0 0 0 !important;
+}
+.home032 .home031,
+.home043 {
+  margin: auto !important;
+}
+.home041 {
+  background: url(../../uploads/2020/09/bg041.jpg) no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.home041:before,
+.home041:after {
+  content: " ";
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: rgba(40, 40, 130, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(40, 40, 130, 1) 0%,
+    rgba(81, 136, 190, 1) 50%,
+    rgba(40, 40, 130, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(40, 40, 130, 1)),
+    color-stop(50%, rgba(81, 136, 190, 1)),
+    color-stop(100%, rgba(40, 40, 130, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(40, 40, 130, 1) 0%,
+    rgba(81, 136, 190, 1) 50%,
+    rgba(40, 40, 130, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(40, 40, 130, 1) 0%,
+    rgba(81, 136, 190, 1) 50%,
+    rgba(40, 40, 130, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(40, 40, 130, 1) 0%,
+    rgba(81, 136, 190, 1) 50%,
+    rgba(40, 40, 130, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(40, 40, 130, 1) 0%,
+    rgba(81, 136, 190, 1) 50%,
+    rgba(40, 40, 130, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#282882',endColorstr='#282882',GradientType=1);
+}
+.home042 > .col-inner {
+  background: transparent !important;
+}
+.home042 img {
+  max-width: 200px !important;
+  margin: auto !important;
+  display: block !important;
+}
+.home042.col,
+.home041 > .col {
+  padding: 10px !important;
+}
+.home44 {
+  padding: 4px 0 !important;
+}
+.home051 {
+  border-top: solid 4px #005085;
+  border-bottom: solid 4px #005085;
+}
+.home051 .home0420 {
+  max-width: 20% !important;
+  -ms-flex-preferred-size: 20% !important;
+  flex-basis: 20% !important;
+}
+.home051 .home042 img {
+  max-width: 150px !important;
+}
+.nav-dropdown > li > a {
+  color: #58595b !important;
+}
+.nav-dropdown > li:hover > a img {
+  filter: brightness(100%) invert(100%);
+  transition: all 0.2s;
+}
+.footer-secondary {
+  display: none !important;
+}
+.header-search-form input#woocommerce-product-search-field-0 {
+  border-radius: 4px 0 0 4px !important;
+  margin-left: 20px !important;
+}
+.header-search-form button.ux-search-submit {
+  border-radius: 0 4px 4px 0 !important;
+}
+#fancybox-outer,
+#fancybox-content {
+  border-radius: 10px !important;
+  max-width: 500px !important;
+  min-width: 350px !important;
+}
+#fancybox-content {
+  padding: 25px 25px 5px !important;
+}
+#fancybox-close {
+  top: 2px !important;
+  right: -68px !important;
+}
+label.mh04 {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  text-align: center !important;
+  line-height: 1.4 !important;
+  margin-bottom: 15px;
+}
+.mh00 {
+  display: none !important;
+}
+.mh02,
+.mh03 {
+  text-align: center !important;
+  margin-top: 10px;
+  margin-bottom: -5px;
+  font-size: 18px;
+  position: relative;
+}
+.mh03 strong {
+  display: block !important;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 0px;
+  color: #1e4896 !important;
+  margin-bottom: -20px;
+}
+.mh01 > span {
+  display: inline-block !important;
+  width: 60% !important;
+}
+.mh01 .wpcf7-submit {
+  display: inline-block !important;
+  width: 39% !important;
+  margin-right: 0 !important;
+  background: #1e4896;
+  border-radius: 5px;
+  text-transform: none;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  background: #f3f3f3;
+  background-image: linear-gradient(
+    to left,
+    #4973b2 0%,
+    #10357f 33%,
+    #4973b2 100%,
+    #4973b2 200%
+  );
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 0.2s ease-in;
+}
+.mh01 .wpcf7-submit:hover {
+  background-position: 0 100%;
+  color: #fff;
+  transition: all 0.2s ease-in;
+}
+.mh01 > span input {
+  padding-left: 32px;
+}
+.mh01 > span:before {
+  content: "\e600";
+  font-family: "fl-icons" !important;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1;
+  float: left;
+  position: absolute;
+  top: 9px;
+  left: 6px;
+  font-size: 19px;
+  color: #757575;
+}
+.mh02:before {
+  content: " ";
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 43%;
+  height: 1px;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  background: #b1b1b1;
+}
+.mh02:after {
+  content: " ";
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 43%;
+  height: 1px;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  background: #b1b1b1;
+}
+.mh01 input {
+  margin-bottom: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.mh01 {
+  border: solid 1px #bfbfbf !important;
+  border-radius: 5px !important;
+  padding: 5px 4px !important;
+}
+.mh01 .wpcf7-not-valid-tip {
+  opacity: 1 !important;
+  background-color: #ffb4b4 !important;
+  color: #000000 !important;
+  position: absolute !important;
+  font-size: 14px !important;
+  left: 16px !important;
+  top: 50px !important;
+}
+.mh01 .wpcf7-not-valid-tip:after {
+  border-bottom-color: #ffb4b4 !important;
+}
+#footer .widget li {
+  list-style: disc !important;
+  margin-left: 25px !important;
+}
+#footer .widget li,
+#footer .widget p,
+#footer .widget a,
+#footer td {
+  color: #fff;
+}
+#footer p,
+#footer ul {
+  margin-bottom: 10px !important;
+}
+#footer p i,
+#footer td i {
+  font-size: 20px !important;
+  margin-right: 0 !important;
+  color: #fff !important;
+}
+#footer td {
+  border-bottom: 0 solid #fff;
+  font-size: 15.5px;
+}
+.lhmh a {
+  background: #f3f3f3;
+  background-image: linear-gradient(
+    to left,
+    #4973b2 0%,
+    #10357f 33%,
+    #4973b2 100%,
+    #4973b2 200%
+  );
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 0.2s ease-in;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: inline;
+  font-weight: 600;
+}
+.lhmh a:hover {
+  background-position: 0 100%;
+  color: #fff;
+  transition: all 0.2s ease-in;
+}
+.lhmh {
+  margin: 10px 0 15px !important;
+}
+.wpls-logo-showcase {
+  padding: 0 0 20px !important;
+}
+.footer-1,
+.footer-2 {
+  background: #154c9b;
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(21, 76, 155, 1) 0%,
+    rgba(16, 53, 127, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(21, 76, 155, 1) 0%,
+    rgba(16, 53, 127, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(21, 76, 155, 1) 0%,
+    rgba(16, 53, 127, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#154c9b",endColorstr="#10357f",GradientType=1);
+}
+.tabs.wc-tabs.product-tabs {
+  display: none !important;
+}
+.fanpagefb img {
+  box-shadow: 0px 0px 10px #fff;
+  transition: all 0.3s ease;
+}
+.fanpagefb img:hover {
+  box-shadow: 0px 0px 17px #fff;
+  transition: all 0.3s ease;
+}
+.cskh01 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.cskh91 h1 {
+  font-size: 30px !important;
+  line-height: 1.5 !important;
+  margin-bottom: 15px !important;
+}
+.cskh91 h2 {
+  font-size: 19px !important;
+  line-height: 1.5 !important;
+  margin-bottom: 15px !important;
+  font-weight: 500 !important;
+}
+.cskh92 input {
+  border: solid 1px #000 !important;
+  border-radius: 5px !important;
+}
+input.maxacnhan {
+  width: calc(100% - 150px) !important;
+  float: left;
+}
+div#captcha {
+  width: 140px;
+  float: right;
+  background: #efefef;
+  display: inline;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-top: 3px;
+}
+.cskh92 .btn-primary,
+.cskh92 .btn-primary:active {
+  background-color: #1d4896 !important;
+  border-color: #1d4896 !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+.cskh93 h2 {
+  font-size: 30px !important;
+  line-height: 1.5 !important;
+  margin-bottom: 15px !important;
+}
+.cskh93 h3 {
+  font-size: 19px !important;
+  line-height: 1.5 !important;
+  margin-bottom: 15px !important;
+  font-weight: 500 !important;
+}
+.cskh94 .col-6 {
+  flex: 0 0 auto !important;
+  width: 50% !important;
+}
+.cskh94 form .row [class*="col"] {
+  padding-left: 0.6rem !important;
+  padding-right: 0.6rem !important;
+}
+.cskh94 form .row [class*="col"].cskh941 {
+  padding-right: 30px !important;
+}
+.cskh94 form .row [class*="col"].cskh942 {
+  padding-left: 30px !important;
+}
+.cskh94 input[type="text"],
+.cskh94 select {
+  height: 35px !important;
+  min-height: 35px !important;
+  border: 1px solid #959595 !important;
+  border-radius: 4px !important;
+}
+.cskh94 textarea {
+  border: 1px solid #959595 !important;
+  border-radius: 4px !important;
+}
+.select2-container .select2-selection--single {
+  height: 35px !important;
+  border: 1px solid #959595 !important;
+  border-radius: 4px !important;
+}
+.cskh94 .col-4 {
+  padding-top: 5px;
+}
+.cskh94 .btn-primary,
+.cskh94 .btn-primary:active {
+  background-color: #1d4896 !important;
+  border-color: #1d4896 !important;
+  padding: 5px 25px !important;
+}
+.cskh06 .row,
+.cskh08 .row,
+.footer-widgets .row {
+  margin: auto !important;
+}
+.cskh061 p {
+  font-size: 17px !important;
+  line-height: 1.5 !important;
+  margin-bottom: 7px;
+}
+.modal-lg,
+.modal-xl {
+  max-width: 500px !important;
+}
+.col-6.valuedetail {
+  text-align: right;
+}
+table.thong_so_ky_thuat_rolux tbody tr:nth-child(2n + 0) {
+  background: #ececec;
+}
+table.thong_so_ky_thuat_rolux tbody tr td {
+  padding: 5px;
+  color: #000;
+}
+.section-title b {
+  height: 0 !important;
+}
+.home-center > div > div {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.home-center .col {
+  padding-bottom: 10px !important;
+  padding-top: 15px !important;
+}
+.home-center .col,
+.home-center .gallery-item,
+.home-center .columns {
+  padding: 5px 10px 10px !important;
+}
+.wpls-logo-showcase button.slick-prev,
+.wpls-logo-showcase button.slick-prev:hover,
+.wpls-logo-showcase button.slick-prev:active,
+.wpls-logo-showcase button.slick-next:focus {
+  background: rgba(0, 0, 0, 0)
+    url(https://tlclighting.com.vn/wp-content/uploads/2020/09/arrow-l.png)
+    center center no-repeat !important;
+  background-size: 20px 20px !important;
+}
+.wpls-logo-showcase button.slick-next,
+.wpls-logo-showcase button.slick-next:hover,
+.wpls-logo-showcase button.slick-next:active,
+.wpls-logo-showcase button.slick-prev:focus {
+  background: rgba(0, 0, 0, 0)
+    url(https://tlclighting.com.vn/wp-content/uploads/2020/09/arrow-r.png)
+    center center no-repeat !important;
+  background-size: 20px 20px !important;
+}
+.home-center3 .wpls-logo-cnt.slick-slide {
+  padding: 10px 15px !important;
+}
+.home-center0 {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.box-list-view .box .box-text,
+.box-vertical .box-text {
+  padding-left: 15px !important;
+}
+.section-title a {
+  margin-bottom: 7px !important;
+}
+.single-product .product-info .woocommerce-Price-amount bdi:before {
+  content: "Giá bán:";
+  display: inline-block;
+  position: relative;
+  font-family: Roboto, Arial;
+  font-size: 18px;
+  padding-right: 10px;
+}
+.single-product .product-info del .woocommerce-Price-amount bdi:before {
+  content: "Giá bán:";
+  display: inline-block;
+  position: relative;
+  font-family: Roboto, Arial;
+  font-size: 18px;
+  padding-right: 10px;
+}
+.single-product .product-info ins .woocommerce-Price-amount bdi:before {
+  content: "Giá khuyến mãi:";
+  display: inline-block;
+  position: relative;
+  font-family: Roboto, Arial;
+  font-size: 18px;
+  padding-right: 10px;
+}
+.single-product .product-info ins {
+  display: block;
+  margin-top: 10px;
+}
+.dvls_maps_header_left,
+.dvls_near_you,
+.dvls_result_status.show,
+.dvls_result_infor a {
+  display: none !important;
+}
+.dvls_maps_sidebar {
+  background: #fff !important;
+  width: 40% !important;
+  border: solid 2px #0154a5 !important;
+  height: 400px !important;
+  overflow-y: hidden !important;
+  max-height: 400px !important;
+}
+.dvls_maps_header {
+  width: 40% !important;
+  background: #0054a6 !important;
+  padding: 20px 15px 0 !important;
+}
+.dvls_maps_3col .dvls_maps_col {
+  width: 100% !important;
+}
+.dvls_maps_header_right {
+  padding-left: 0 !important;
+}
+.dvls_maps_header_right form {
+  margin-bottom: 0 !important;
+  z-index: 9;
+  position: relative;
+}
+.dvls_result_wrap .dvls_result_item:nth-child(2n + 1),
+.dvls_result_wrap .dvls_result_item.active {
+  background: #fff !important;
+}
+.dvls_result_wrap {
+  max-height: 400px !important;
+  overflow-y: scroll !important;
+}
+.dvls_maps_main {
+  padding-left: 42% !important;
+  z-index: 1 !important;
+  top: -180px !important;
+}
+div#dvls_maps {
+  height: 575px !important;
+}
+.dvls_maps_wrap {
+  height: 600px !important;
+}
+.ttbh023 {
+  padding: 0 !important;
+  position: relative !important;
+  top: -640px !important;
+  z-index: 9 !important;
+  min-height: 600px !important;
+  transition: all 0.3s ease-in;
+  opacity: 1;
+}
+.ttbh023 img {
+  max-height: 600px;
+}
+.hidebh,
+.hidebh2 {
+  z-index: -1 !important;
+  transition: all 0.3s ease-in;
+  height: 400px !important;
+  opacity: 0;
+}
+.dvls_maps_body.devvn_loading:before {
+  width: 40% !important;
+}
+.ttbh022 {
+  height: 0 !important;
+  overflow: hidden !important;
+}
+.ttbh02 .section-content {
+  height: 650px;
+}
+.ttbh032 p {
+  font-size: 13px;
+}
+.ttbh032 p span {
+  font-size: 14px;
+}
+.dvls_maps_wrap select {
+  color: #fff !important;
+  border-radius: 0 !important;
+}
+.dvls_maps_wrap select option {
+  color: #000 !important;
+}
+.dvls_maps_wrap input.dvls-submit {
+  background: #f1f2f2 !important;
+  padding: 0 20px !important;
+  border-radius: 0 !important;
+  color: #0154a5 !important;
+  text-transform: none !important;
+  font-weight: 500 !important;
+}
+.uxb-draggable.ttbh023 {
+  top: -10px !important;
+}
+.dvls_result_infor p {
+  font-size: 14px !important;
+  line-height: 20px !important;
+  margin-bottom: 0 !important;
+}
+.dvls_maps_wrap .dvls_result_infor h3 {
+  font-size: 15px !important;
+  line-height: 20px !important;
+  color: #0054a6 !important;
+  text-transform: uppercase !important;
+  letter-spacing: -0.2px !important;
+  margin-bottom: 0 !important;
+  font-weight: 800 !important;
+  position: relative;
+}
+.dvls_result_infor {
+  padding-left: 18px;
+}
+.dvls_maps_wrap .dvls_result_infor h3:before {
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 15px;
+  background: url(https://tlclighting.com.vn/wp-content/uploads/2022/04/Asset-3.svg)
+    no-repeat;
+  position: absolute;
+  background-size: contain;
+  left: -16px;
+  top: 2px;
+}
+.dvls_result_infor p a {
+  display: inline-block !important;
+  color: #000;
+  pointer-events: none;
+  position: relative;
+}
+.dvls_result_infor p a:before {
+  content: "ĐT: ";
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 0;
+  padding-right: 4px;
+}
+.dvls_result_infor p:nth-of-type(1):before {
+  content: "ĐC: ";
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 0;
+  padding-right: 4px;
+}
+.dvls_result_infor p {
+  position: relative;
+}
+.infobox-wrapper .infobox {
+  width: 350px !important;
+  padding: 5px !important;
+  border: solid 1px #0154a5 !important;
+}
+.infobox-wrapper .item_infobox_infor h3 {
+  color: #0054a6 !important;
+  text-transform: uppercase !important;
+}
+.infobox-wrapper .item:after {
+  border-top-color: #0154a5 !important;
+}
+.dm011 * {
+  color: #fff !important;
+}
+.dm01 {
+  height: 54.27vw;
+}
+.dm01 .section-content.relative {
+  position: absolute !important;
+  bottom: 0;
+}
+.dm01 .box-image img {
+  max-width: 120px;
+  display: block;
+}
+.dm011 h4 {
+  font-size: 16px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.2px !important;
+  font-weight: 600 !important;
+  font-family: "HelvetIns", Serif !important;
+  margin-bottom: 10px !important;
+}
+.dm011 p {
+  font-size: 14px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.2px !important;
+  font-weight: 400 !important;
+  font-style: italic;
+}
+.dm021 h3 {
+  font-size: 25px !important;
+  line-height: 35px !important;
+  letter-spacing: 0px !important;
+  font-weight: 600 !important;
+  font-family: "HelvetIns", Serif !important;
+  margin-bottom: 10px !important;
+}
+.dm0220 img {
+  max-width: 100px;
+  display: block;
+}
+.dm022 > .col-inner {
+  position: relative !important;
+  width: 100%;
+  height: 300px;
+}
+.dm0220 .box-image {
+  display: inline-block !important;
+  width: 100px;
+  float: left;
+}
+.dm0220 .box-text {
+  display: inline-block !important;
+  width: calc(100% - 100px);
+  padding: 0 0 0 10px !important;
+}
+.dm0220 h4 {
+  font-size: 17px !important;
+  line-height: 26px !important;
+  letter-spacing: 0px !important;
+  font-weight: 600 !important;
+  font-family: "HelvetIns", Serif !important;
+  margin-bottom: 5px !important;
+  color: #0555a1 !important;
+  text-transform: uppercase;
+}
+.dm0220 p {
+  font-size: 15px !important;
+  line-height: 22px !important;
+  letter-spacing: 0px !important;
+  font-weight: 500 !important;
+  font-style: italic;
+}
+.dm0220 {
+  height: 125px !important;
+}
+.dm0221 {
+  position: absolute !important;
+  width: 45%;
+  box-shadow: 0px 0px 5px #c2c2c2;
+  border-radius: 10px;
+  padding: 10px;
+  left: 0;
+  top: 0;
+}
+.dm0222 {
+  position: absolute !important;
+  width: 45%;
+  box-shadow: 0px 0px 5px #c2c2c2;
+  border-radius: 10px;
+  padding: 10px;
+  left: 15%;
+  top: 200px;
+}
+.dm0223 {
+  position: absolute !important;
+  width: 45%;
+  box-shadow: 0px 0px 5px #c2c2c2;
+  border-radius: 10px;
+  padding: 10px;
+  left: 48%;
+  top: 0;
+}
+.dm0224 {
+  position: absolute !important;
+  width: 45%;
+  box-shadow: 0px 0px 5px #c2c2c2;
+  border-radius: 10px;
+  padding: 10px;
+  left: 63%;
+  top: 200px;
+}
+.dm0222 .box-image,
+.dm0224 .box-image {
+  float: right;
+}
+.dm0222 .box-text,
+.dm0224 .box-text {
+  padding: 0 10px 0 0 !important;
+}
+.bar-buoc {
+  position: absolute !important;
+  left: 10%;
+  top: 162px;
+  display: inline-block !important;
+  width: 80%;
+  height: 2px;
+  background: #0457a6;
+}
+.dm0221:before {
+  content: "";
+  position: absolute !important;
+  display: block !important;
+  left: calc(50% - 5px);
+  bottom: -43px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #0457a6;
+}
+.dm0221:after {
+  content: "";
+  position: absolute !important;
+  display: block !important;
+  left: calc(50% - 17px);
+  bottom: -32px;
+  width: 33px;
+  height: 33px;
+  background: url(https://tlclighting.com.vn/wp-content/uploads/2022/11/den-than-01.png)
+    no-repeat;
+  background-size: cover;
+}
+.dm0222:before {
+  content: "";
+  position: absolute !important;
+  display: block !important;
+  left: calc(50% - 5px);
+  top: -42px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #0457a6;
+}
+.dm0222:after {
+  content: "";
+  position: absolute !important;
+  display: block !important;
+  left: calc(50% - 17px);
+  top: -32px;
+  width: 33px;
+  height: 33px;
+  background: url(https://tlclighting.com.vn/wp-content/uploads/2022/11/den-than-01.png)
+    no-repeat;
+  background-size: cover;
+  transform: rotate(180deg);
+}
+.dm0223:before {
+  content: "";
+  position: absolute !important;
+  display: block !important;
+  left: calc(50% - 5px);
+  bottom: -43px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #0457a6;
+}
+.dm0223:after {
+  content: "";
+  position: absolute !important;
+  display: block !important;
+  left: calc(50% - 17px);
+  bottom: -32px;
+  width: 33px;
+  height: 33px;
+  background: url(https://tlclighting.com.vn/wp-content/uploads/2022/11/den-than-01.png)
+    no-repeat;
+  background-size: cover;
+}
+.dm0224:before {
+  content: "";
+  position: absolute !important;
+  display: block !important;
+  left: calc(50% - 5px);
+  top: -42px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #0457a6;
+}
+.dm0224:after {
+  content: "";
+  position: absolute !important;
+  display: block !important;
+  left: calc(50% - 17px);
+  top: -32px;
+  width: 33px;
+  height: 33px;
+  background: url(https://tlclighting.com.vn/wp-content/uploads/2022/11/den-than-01.png)
+    no-repeat;
+  background-size: cover;
+  transform: rotate(180deg);
+}
+.dm03 .lyte-wrapper {
+  width: 750px !important;
+  border: solid 20px #fbfbfb;
+  box-shadow: 0 0 2px #909090;
+}
+.dm05 {
+  margin-top: -40px;
+}
+.dm05 .img .img-inner {
+  -webkit-filter: drop-shadow(0px 0px 5px rgb(0 0 0/0%));
+  filter: drop-shadow(0px 0px 5px rgb(0 0 0/0%));
+  transition: all 0.3s ease;
+}
+.dm05 .img .img-inner:hover {
+  -webkit-filter: drop-shadow(0px 0px 5px rgb(0 0 0/38%));
+  filter: drop-shadow(0px 0px 5px rgb(0 0 0/38%));
+  transition: all 0.3s ease;
+}
+.dm05 .col {
+  padding: 0 10px 10px !important;
+}
+.dm061 ul {
+  list-style: none;
+}
+.dm061 ul ul {
+  padding-inline-start: 0px !important;
+  margin: 10px 5px 5px 10px !important;
+}
+.dm061 li {
+  position: relative !important;
+  font-size: 17px;
+  line-height: 1.5;
+  padding-left: 20px;
+  font-style: italic;
+}
+.dm061 li:before {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 33px;
+  background: url(https://tlclighting.com.vn/wp-content/uploads/2022/11/den-than-01.png)
+    no-repeat;
+  position: absolute !important;
+  left: -22px;
+  top: -1px;
+}
+.dm061 ul ul li:before {
+  display: none;
+}
+.dm07 {
+  height: 47.88vw;
+  margin-top: -30px !important;
+}
+.dm071 h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 35px !important;
+  line-height: 45px !important;
+  letter-spacing: 0px !important;
+  font-weight: 600 !important;
+  font-family: "HelvetIns", Serif !important;
+}
+.dm071 input {
+  height: 50px !important;
+  font-size: 16px !important;
+  border-radius: 12px !important;
+  max-width: 400px !important;
+  margin: 12px auto !important;
+  display: block !important;
+}
+.dm071 input[type="submit"] {
+  background: #fac722;
+  background: linear-gradient(
+    0deg,
+    rgba(250, 199, 34, 1) 0%,
+    rgba(248, 59, 1, 1) 100%
+  );
+  border: none;
+  border-radius: 50px !important;
+  padding: 0 60px;
+  font-size: 22px !important;
+  line-height: 1 !important;
+  height: 50px !important;
+  margin-top: 22px !important;
+}
+.dm071 .wpcf7 .wpcf7-not-valid-tip {
+  max-width: 400px !important;
+  margin: auto !important;
+}
+.dm071 .wpcf7 form.invalid .wpcf7-response-output,
+.dm071 .wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.sent .wpcf7-response-output {
+  max-width: 400px !important;
+  margin: auto !important;
+  background: rgb(255 255 255/70%) !important;
+}
+.page-id-9739 #main .row {
+  max-width: 990px !important;
+}
+@media screen and (min-width: 850px) {
+  #black-studio-tinymce-3 {
+    padding-left: 50px !important;
+    padding-top: 15px;
+  }
+  .footer-2 .large-columns-3 .col {
+    max-width: 30% !important;
+    -ms-flex-preferred-size: 30% !important;
+    flex-basis: 30% !important;
+  }
+  .footer-2 .large-columns-3 .col:first-child {
+    max-width: 40% !important;
+    -ms-flex-preferred-size: 40% !important;
+    flex-basis: 40% !important;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .dm01 {
+    height: 60vw;
+  }
+  .dm01 .bg-fill {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: top center;
+  }
+  .dm01 .box-image img {
+    max-width: 90px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .dm01 {
+    height: calc(55vw + 300px);
+  }
+  .dm01 .bg-fill {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: top center;
+  }
+  .dm01 .box-image img {
+    max-width: 90px;
+  }
+  .dm01 .large-3 {
+    max-width: 50% !important;
+    -ms-flex-preferred-size: 50% !important;
+    flex-basis: 50% !important;
+    padding-bottom: 10px !important;
+  }
+  .dm01 .box-text {
+    max-width: 300px;
+    margin: auto;
+  }
+  .dm022 > .col-inner {
+    position: relative !important;
+    width: 100%;
+    height: auto;
+  }
+  .bar-buoc {
+    position: absolute !important;
+    left: 10%;
+    top: 20px;
+    display: inline-block !important;
+    width: 2px;
+    height: calc(100% - 40px);
+    background: #0457a6;
+  }
+  .dm0220 {
+    position: relative !important;
+    width: 80%;
+    box-shadow: 0px 0px 5px #c2c2c2;
+    border-radius: 10px;
+    padding: 10px;
+    left: 0;
+    top: 0;
+    margin-bottom: 25px;
+    display: block;
+    margin-left: calc(10% + 60px);
+  }
+  .dm0222 .box-image,
+  .dm0224 .box-image {
+    float: left;
+  }
+  .dm0222 .box-text,
+  .dm0224 .box-text {
+    padding: 0 0 0 10px !important;
+  }
+  .dm0220:before {
+    content: "";
+    position: absolute !important;
+    display: block !important;
+    left: -64px;
+    bottom: auto;
+    top: 62px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #0457a6;
+  }
+  .dm0220:after {
+    content: "";
+    position: absolute !important;
+    display: block !important;
+    left: -46px;
+    top: 51px;
+    width: 33px;
+    height: 33px;
+    background: url(https://tlclighting.com.vn/wp-content/uploads/2022/11/den-than-01.png)
+      no-repeat;
+    background-size: cover;
+    transform: rotate(0);
+  }
+  .dm05 .section-content.relative {
+    max-width: 700px;
+    margin: auto;
+  }
+  .dm051 {
+    max-width: 50% !important;
+    -ms-flex-preferred-size: 50% !important;
+    flex-basis: 50% !important;
+    padding-bottom: 30px !important;
+  }
+  .dm022 {
+    padding-bottom: 0 !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .cskh94 form .dragArea {
+    margin: auto !important;
+  }
+  .dm01 .box-image img {
+    max-width: 80px;
+  }
+  .bar-buoc {
+    left: 5%;
+  }
+  .dm0220 {
+    width: 85%;
+    margin-left: calc(5% + 60px);
+  }
+  .dm061 li {
+    font-size: 16px;
+  }
+  .dm07 .bg-fill {
+    background-image: url(https://tlclighting.com.vn/wp-content/uploads/2022/11/bg-bottom-02.png) !important;
+  }
+  .dm07 {
+    height: 57.32vw;
+    margin-top: -30px !important;
+    margin-bottom: -5px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .top012 {
+    margin-left: 0 !important;
+    margin-bottom: 10px;
+  }
+  .top01 {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .top012 {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+  }
+  .top011 {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+  .ttbh023 {
+    top: -675px !important;
+  }
+  .dvls_maps_main {
+    padding-left: 0 !important;
+    top: 0 !important;
+  }
+  .dvls_maps_sidebar,
+  .dvls_maps_header {
+    width: 100% !important;
+  }
+  .dvls_maps_wrap {
+    height: 1200px !important;
+  }
+  .ttbh02 .section-content {
+    height: 1200px !important;
+  }
+  .dvls_maps_body {
+    height: 400px !important;
+  }
+  .dvls_maps_main {
+    top: 425px !important;
+  }
+}
+@media screen and (max-width: 769px) {
+  .full-width .ubermenu-nav,
+  .page-cskh-02 .container,
+  .page-cskh-02 .row {
+    max-width: 100vw !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .cskh94 .col-6 {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+  }
+  .cskh94 form .row [class*="col"].cskh942,
+  .cskh94 form .row [class*="col"].cskh941 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .home013 {
+    max-width: 50% !important;
+    -ms-flex-preferred-size: 50% !important;
+    flex-basis: 50% !important;
+    width: 50%;
+    padding: 0 10px 15px 10px !important;
+  }
+  .home01 .small-10 {
+    max-width: 100% !important;
+    -ms-flex-preferred-size: 100% !important;
+    flex-basis: 100% !important;
+  }
+  .home011 img {
+    max-width: 35px !important;
+  }
+  .home011 a {
+    font-size: 13px !important;
+  }
+  .mh01 > span,
+  .mh01 .wpcf7-submit {
+    display: inline-block !important;
+    width: 100% !important;
+  }
+  #fancybox-content {
+    border-width: 0 !important;
+    padding: 20px 10px 10px !important;
+  }
+  #fancybox-close {
+    top: -10px !important;
+    right: -30px !important;
+  }
+  .cskh061 .col-inner,
+  .cskh062 .col-inner {
+    padding: 0 0 0 0 !important;
+  }
+  .cskh061.col,
+  .cskh062 .col {
+    padding-bottom: 10px !important;
+  }
+  .hide768 {
+    display: none;
+  }
+  .qrcode01 {
+    margin-bottom: 20px;
+  }
+  .cskh062 h6 span,
+  .cskh062 h6 {
+    font-size: 15px !important;
+    line-height: 1.2 !important;
+    letter-spacing: 0;
+  }
+  .cskh062 {
+    padding: 0 5px 10px !important;
+  }
+  .dm071 h2 {
+    font-size: 25px !important;
+    line-height: 35px !important;
+  }
+  .dm071 input {
+    height: 40px !important;
+    font-size: 15px !important;
+    border-radius: 10px !important;
+    max-width: 400px !important;
+    margin: 8px auto !important;
+    display: block !important;
+  }
+  .dm071 input[type="submit"] {
+    background: #fac722;
+    background: linear-gradient(
+      0deg,
+      rgba(250, 199, 34, 1) 0%,
+      rgba(248, 59, 1, 1) 100%
+    );
+    border: none;
+    border-radius: 40px !important;
+    padding: 0 45px;
+    font-size: 17px !important;
+    line-height: 1 !important;
+    height: 25px !important;
+    margin-top: 15px !important;
+  }
+  .dvls_maps_header_right {
+    float: none !important;
+  }
+  .dvls_maps_main {
+    top: 15px !important;
+  }
+  .ttbh023 {
+    top: -655px !important;
+    background: #fff;
+  }
+  #button-contact-vr {
+    bottom: 38px !important;
+    right: -10px !important;
+    transform: scale(0.7) !important;
+  }
+  .page-id-9195 #button-contact-vr {
+    display: none !important;
+  }
+  .dm01 .box-image img {
+    max-width: 50px;
+  }
+  .dm01 {
+    height: calc(55vw + 320px);
+  }
+  .dm061 ul ul {
+    padding-inline-start: 0px !important;
+    margin: 10px 5px 5px -15px !important;
+  }
+}
+@media screen and (max-width: 567px) {
+  .dm03 .lyte-wrapper {
+    width: auto !important;
+    border: solid 10px #fbfbfb;
+    box-shadow: 0 0 2px #909090;
+    margin-top: -10px !important;
+  }
+  .ttbh021 {
+    padding: 0 0 30px !important;
+  }
+  .ttbh02 {
+    padding: 0 5px !important;
+  }
+  .ttbh023 img {
+    padding: 20px;
+  }
+  #fancybox-close {
+    top: -10px !important;
+    right: -10px !important;
+  }
+  #ftwp-trigger {
+    right: 1px !important;
+  }
+  #text-3 img {
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .cskh062 h6 span,
+  .cskh062 h6 {
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+    letter-spacing: 0;
+  }
+  .cskh062 .col {
+    padding: 0 5px 10px !important;
+  }
+  .qrcode01 {
+    margin-bottom: 5px;
+  }
+  .infobox-wrapper .infobox {
+    width: 300px !important;
+    padding: 2px !important;
+  }
+  .gm-style .infobox-wrapper {
+    margin-left: -40px;
+  }
+  .dm011 p {
+    font-size: 12.5px !important;
+    line-height: 18px !important;
+  }
+  .dm0220 p {
+    font-size: 13px !important;
+    line-height: 18px !important;
+  }
+  .dm061 li {
+    font-size: 14px;
+  }
+  .dm01 {
+    height: calc(55vw + 350px);
+  }
+  .wpcf7 form.invalid .wpcf7-response-output,
+  .wpcf7 form.unaccepted .wpcf7-response-output {
+    display: none !important;
+  }
+  .dm071 .wpcf7 .wpcf7-not-valid-tip {
+    font-size: 11.5px;
+    padding: 3px 5px;
+  }
+  .dm071 .wpcf7 form.sent .wpcf7-response-output {
+    font-size: 13px !important;
+    width: 200px !important;
+    text-align: center;
+    margin-top: 10px !important;
+    margin-bottom: 0 !important;
+  }
+  .dm071 .wpcf7-form {
+    margin-bottom: 0 !important;
+    padding-top: 79vw;
+  }
+  .dm07 .bg-fill {
+    background-image: url(https://tlclighting.com.vn/wp-content/uploads/2022/11/bg-bottom-05-min.png) !important;
+    background-color: #0558a7;
+  }
+  .dm07 {
+    height: auto;
+    margin-top: 0 !important;
+    margin-bottom: 0;
+  }
+  .dm06 {
+    margin-bottom: -45px !important;
+  }
+  .dm07 .bg-fill {
+    background-size: contain !important;
+    background-position: top center !important;
+  }
+  .dm07 .medium-6 {
+    max-width: 100% !important;
+    -ms-flex-preferred-size: 100% !important;
+    flex-basis: 100% !important;
+  }
+}
+@media screen and (max-width: 550px) {
+  .cskh062.medium-5 {
+    max-width: 50% !important;
+    -ms-flex-preferred-size: 50% !important;
+    flex-basis: 50% !important;
+  }
+  .dm07 .col {
+    padding-bottom: 10px !important;
+    padding-left: 0 !important;
+    padding-right: 5px !important;
+  }
+  .dm01 .bg-fill {
+    background-size: 125% !important;
+  }
+}
+@media screen and (max-width: 420px) {
+  .dm01 .bg-fill {
+    background-size: 135% !important;
+  }
+  .dm01 .large-3 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .dm01 {
+    height: calc(55vw + 400px);
+  }
+  .bar-buoc {
+    left: 0;
+  }
+  .dm0220 {
+    width: 90%;
+    margin-left: calc(0% + 40px);
+    padding: 5px;
+  }
+  .dm0220:before {
+    left: -44px;
+  }
+  .dm0220:after {
+    left: -33px;
+  }
+  .dm0220 img {
+    max-width: 75px;
+    margin-top: 18px;
+  }
+  .dm0220 .box-image {
+    width: 75px;
+    border-radius: 75px !important;
+  }
+  .dm0220 .box-text {
+    width: calc(100% - 75px);
+  }
+  .dm071 h2 {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+  .dm071 input {
+    height: 35px !important;
+    font-size: 15px !important;
+    border-radius: 10px !important;
+    max-width: 310px !important;
+    margin: 10px auto !important;
+    display: block !important;
+  }
+  .dm071 .wpcf7 .wpcf7-not-valid-tip {
+    max-width: 310px !important;
+    margin: auto !important;
+  }
+  .dm071 input[type="submit"] {
+    background: #fac722;
+    background: linear-gradient(
+      0deg,
+      rgba(250, 199, 34, 1) 0%,
+      rgba(248, 59, 1, 1) 100%
+    );
+    border: none;
+    border-radius: 40px !important;
+    padding: 0 38px;
+    font-size: 15px !important;
+    line-height: 1 !important;
+    height: 25px !important;
+    margin-top: 10px !important;
+  }
+  .dm021 h3 {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+}
