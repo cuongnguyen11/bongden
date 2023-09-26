@@ -201,7 +201,8 @@
             <div class="form-group">
                 <label class="col-sm-2 col-xs-12 control-label">Form email gửi khách</label>
                 <div class="col-sm-9 col-xs-12">
-                    <textarea name="content">{!! view('frontend.mail') !!}</textarea>
+                    
+                    <textarea name="content">{!! view('frontend.mail_show') !!}</textarea>
                                             
                 </div>
             </div>

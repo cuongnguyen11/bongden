@@ -19,22 +19,41 @@ class showController extends Controller
 
     public function updateFile(Request $request)
     {
+      
+        $path = resource_path('views/frontend/list_product_mail.blade.php');
+
+        $list_product_code_php = File::get($path);
+
+        $convert = ['{name}', '{address}', '{email}', '{phone_number}', '{orderId}'];
+
+        $change  = ['{{ $name }}', '{{ $address }}', '{{ $email }}', '{{ $phone_number }}', '{{$orderId}}'];
+
+
+
+        $content_show = html_entity_decode($request->content);
+
+
+        $content =  str_replace($convert, $change, $content_show);
+
+        $content =  str_replace('<p>&nbsp;</p>', '', $content);
+
+         $content =  str_replace('<br />', '', $content);
+
+        $content = str_replace('{list_product}', $list_product_code_php, $content);
+
+
+
+        //xóa file gốc và file show
 
         Storage::disk('local')->delete('/frontend/mail.blade.php');
 
-        $table = '{list_product}';
+        Storage::disk('local')->delete('/frontend/mail_show.blade.php');
 
-
-        $convert = ['{name}', '{address}', '{email}', '{phone_number}', '{list_product}'];
-
-        $change = ["<?= '$name'??'{name}' ?>", "<?= $address??'{address}' ?>", "<?= $email??'{email}' ?>", "<?= $phone_number??'{phone_number}' ?>", $table];
-
-
-        $content = html_entity_decode($request->content);
-
-        $content =  str_replace($convert, $change, $content);
+        //đẩy form mail vào file gốc và file show
 
         Storage::disk('local')->put('/frontend/mail.blade.php',  $content);
+
+        Storage::disk('local')->put('/frontend/mail_show.blade.php',  $content_show);
 
         return back();
        
