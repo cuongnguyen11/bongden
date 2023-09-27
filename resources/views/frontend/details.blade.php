@@ -343,7 +343,7 @@
                                                                 <div class="_item  rep_75082 _level_0 _sub_0">
                                                                     <article itemprop="review" itemscope="" itemtype="http://schema.org/Review">
                                                                         <p class="clearfix cls" itemscope="" itemprop="author" itemtype="http://schema.org/Person"><span class="_name" itemprop="name">{{ $comments->name }}</span>
-                                                                            <label class="sttB"><i class="iconcom-checkbuy"></i>Đã mua tại voisentam.com/</label>
+                                                                            <label class="sttB"><i class="iconcom-checkbuy"></i>Đã mua tại voisentam.com</label>
                                                                         </p>
                                                                         <div class="wrap_rate">
                                                                             <p class="_content " itemprop="description"><span><i class="iconcom-txtstar"></i><i class="iconcom-txtstar"></i><i class="iconcom-txtstar"></i><i class="iconcom-txtstar"></i><i class="iconcom-txtstar"></i></span>{!!  $comments->content  !!}</p>
