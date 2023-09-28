@@ -400,15 +400,7 @@ class categoryController extends Controller
 
             $link   =  $findID->link;
 
-
-            $Group_product = cache()->remember('groupProduct_cate_child__'.$id_cate, 1000, function () use($id_cate){
-                $Group_product = groupProduct::find($id_cate)??'';
-
-                return  $Group_product;
-
-            });
-
-            
+            $Group_product = groupProduct::find($id_cate)??'';
 
             $slogan =  $Group_product->slogan;
 
