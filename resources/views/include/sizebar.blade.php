@@ -18,7 +18,7 @@
 
                             <?php 
 
-                                $groupProduct_child = App\Models\groupProduct::where('parent_id', $value->id)->select('link', 'name')->get();
+                                $groupProduct_child = App\Models\groupProduct::where('parent_id', $value->id)->select('link', 'name')->where('active', 1)->get();
                             ?>
 
                             @if(!empty($groupProduct_child) && $groupProduct_child->count()>0)
