@@ -2,12 +2,7 @@
 @section('content')
 
 <main id="main" class="">
-    <style type="text/css">
-        
-        .box-image .image-none{
-            height: 300px;
-        }
-    </style>
+    
     <div class="row category-page-row">
 
         @include('include.sizebar')
