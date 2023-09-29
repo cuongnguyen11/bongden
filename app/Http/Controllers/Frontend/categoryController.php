@@ -421,7 +421,6 @@ class categoryController extends Controller
 
                 $Group_product_active = $Group_product->active;
 
-                $data = [];
 
                 if($Group_product_active==1){
 

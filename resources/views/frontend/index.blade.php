@@ -27,6 +27,11 @@
                 <div class="products row row-small large-columns-4 medium-columns-3 small-columns-2">
 
                     @if(isset($data))
+
+                    <?php 
+
+                        dd($data);
+                    ?>
                     @foreach($data as $value)
                     <div class="product-small col has-hover product type-product post-8037 status-publish first instock product_cat-den-led-bup product_cat-den-led-bup-tru-dos has-post-thumbnail shipping-taxable purchasable product-type-simple">
                         <div class="col-inner">

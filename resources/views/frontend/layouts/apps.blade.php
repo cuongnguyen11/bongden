@@ -227,7 +227,7 @@
                     </div>
                     <div id="text-4" class="col pb-0 widget widget_text">
                         <div class="textwidget">
-                            <p><span style="font-size: 120%;"><strong>CHÍNH SÁCH TLC LIGHTING:</strong></span></p>
+                            <p><span style="font-size: 120%;"><strong>CHÍNH SÁCH :</strong></span></p>
                             <ul>
                                 <?php
                                     $posts  = App\Models\post::where('category', 5)->get();
