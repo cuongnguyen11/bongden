@@ -5,7 +5,7 @@
     <style type="text/css">
         
         .box-image .image-none{
-            height: 300px;
+            height: 200px;
         }
     </style>
     <div class="row category-page-row">
