@@ -7,6 +7,10 @@
         .box-image .image-none{
             height: 200px;
         }
+
+        .box-text.text-center{
+            height: 94px;
+        }
     </style>
     <div class="row category-page-row">
 
