@@ -7,7 +7,7 @@
 
                      <?php 
 
-                        $groupProduct = App\Models\groupProduct::select('link', 'name', 'id')->get();
+                        $groupProduct = App\Models\groupProduct::select('link', 'name', 'id')->where('active', 1)->get();
                     ?>
 
                     @if(!empty($groupProduct) && $groupProduct->count()>0)
