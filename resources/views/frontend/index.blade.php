@@ -15,10 +15,10 @@
                 if(!empty($list_product_cate_hide) && $list_product_cate_hide->count()>0){
 
                     foreach ($list_product_cate_hide as $value) {
-                        
+
                         $ar_list = json_decode($value->product_id);
 
-                        if(count($ar_list)>0){
+                        if(isset($ar_list)){
                              foreach ($ar_list as  $val) {
 
                                 array_push($list_product_hide, $val);
