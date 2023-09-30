@@ -12,15 +12,25 @@
 
                 if(!empty($list_product_cate_hide) && $list_product_cate_hide->count()>0){
                     foreach ($list_product_cate_hide as $value) {
+
+                        $ar_list = json_decode($value->product_id);
+
+                        foreach ($ar_list as  $val) {
+
+                            array_push($list_product_hide, $val)
+                           
+                        }
                         
-                        array_push($list_product_hide, json_decode($value->product_id));
+                       
                     }
 
                 }
 
-                array_merge($list_product_hide);
+                $list_product_hide = array_unique($list_product_hide);
 
                 dd($list_product_hide);
+
+
 
            
         ?>
