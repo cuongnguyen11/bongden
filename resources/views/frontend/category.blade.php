@@ -6,7 +6,7 @@
     <div class="row category-page-row">
 
         <?php 
-
+            dd($id_cate);
             if($id_cate ===7){
 
                 $list_product_cate_hide = App\Models\groupProduct::select('product_id','id')->where('active', 0)->get();
