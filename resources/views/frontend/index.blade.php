@@ -32,11 +32,6 @@
 
                 $list_product_hide = array_unique($list_product_hide);
 
-                dd($list_product_hide);
-
-
-
-           
         ?>
 
     <style type="text/css">
@@ -67,6 +62,8 @@
 
                     
                     @foreach($data as $value)
+
+                    @if(!in_array($value->id, $list_product_hide))
                     <div class="product-small col has-hover product type-product post-8037 status-publish first instock product_cat-den-led-bup product_cat-den-led-bup-tru-dos has-post-thumbnail shipping-taxable purchasable product-type-simple">
                         <div class="col-inner">
                             <div class="badge-container absolute left top z-1"></div>
@@ -87,6 +84,7 @@
                             </div>
                         </div>
                     </div>
+                    @endif
                     @endforeach
                     @endif
 
