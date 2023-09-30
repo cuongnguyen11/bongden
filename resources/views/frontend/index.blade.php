@@ -17,8 +17,8 @@
                     foreach ($list_product_cate_hide as $value) {
 
 
-                        dd($value);
-                        
+                        dd($value->product_id);
+
                         $ar_list = json_decode($value->product_id);
 
                         if(count($ar_list)>0){
