@@ -18,6 +18,8 @@
 
                 }
 
+                array_merge($list_product_hide);
+
                 dd($list_product_hide);
 
            
