@@ -17,7 +17,7 @@
 
                         foreach ($ar_list as  $val) {
 
-                            array_push($list_product_hide, $val)
+                            array_push($list_product_hide, $val);
                            
                         }
                         
