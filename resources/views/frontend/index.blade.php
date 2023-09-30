@@ -2,6 +2,28 @@
 @section('content')
 
 <main id="main" class="">
+
+    <?php 
+            dd($id_cate);
+            if($id_cate ===7){
+
+                $list_product_cate_hide = App\Models\groupProduct::select('product_id','id')->where('active', 0)->get();
+
+                $list_product_hide = [];
+
+                if(!empty($list_product_cate_hide) && $list_product_cate_hide->count()>0){
+                    foreach ($list_product_cate_hide as $value) {
+                        
+                        array_push($list_product_hide, json_decode($value->product_id));
+                    }
+
+                }
+
+                dd($list_product_hide);
+
+            }
+        ?>
+
     <style type="text/css">
         
         .box-image .image-none{
