@@ -5,23 +5,23 @@
 
     <?php 
             dd($id_cate);
-            if($id_cate ===7){
+            // if($id_cate ===7){
 
-                $list_product_cate_hide = App\Models\groupProduct::select('product_id','id')->where('active', 0)->get();
+            //     $list_product_cate_hide = App\Models\groupProduct::select('product_id','id')->where('active', 0)->get();
 
-                $list_product_hide = [];
+            //     $list_product_hide = [];
 
-                if(!empty($list_product_cate_hide) && $list_product_cate_hide->count()>0){
-                    foreach ($list_product_cate_hide as $value) {
+            //     if(!empty($list_product_cate_hide) && $list_product_cate_hide->count()>0){
+            //         foreach ($list_product_cate_hide as $value) {
                         
-                        array_push($list_product_hide, json_decode($value->product_id));
-                    }
+            //             array_push($list_product_hide, json_decode($value->product_id));
+            //         }
 
-                }
+            //     }
 
-                dd($list_product_hide);
+            //     dd($list_product_hide);
 
-            }
+            // }
         ?>
 
     <style type="text/css">
