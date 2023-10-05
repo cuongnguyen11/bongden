@@ -48,7 +48,7 @@ class productController extends AppBaseController
     public function index(Request $request)
     {
 
-        $products = product::paginate(10);
+        $products = product::orderBy('id', 'desc')->paginate(10);
         
         return view('products.index')
             ->with('products', $products);
