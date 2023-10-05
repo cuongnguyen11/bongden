@@ -397,10 +397,11 @@ class categoryController extends Controller
 
             $parent_id_cate = $ar_list[0]['id'];
 
-
             $link   =  $findID->link;
 
             $Group_product = groupProduct::find($id_cate)??'';
+
+            $details = $Group_product->Detail;
 
             $slogan =  $Group_product->slogan;
 
@@ -477,6 +478,7 @@ class categoryController extends Controller
                 'groupProduct_level'=>$groupProduct_level,
                 'parent_id_cate'=>$parent_id_cate,
                 'page'=>$page??1,
+                'details'=>$details
 
             ];
             
