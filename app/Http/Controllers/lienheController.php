@@ -10,6 +10,8 @@ use Carbon\Carbon;
 
 use DB;
 
+use Session;
+
 use App\Models\call;
 
 class lienheController extends Controller
@@ -39,7 +41,9 @@ class lienheController extends Controller
         $callphone->active = 0;
         $callphone->product_id = $request->product_id;
         $callphone->save();
-       
+
+        Session::flash('successfast', 'Mua thành công sản phẩm!'); 
+        return route('thankyoufast');
     }
 
     public function updateCall(Request $request, $id)

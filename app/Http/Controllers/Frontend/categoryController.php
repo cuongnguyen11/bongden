@@ -46,6 +46,17 @@ class categoryController extends Controller
         
     }
 
+    public function thankfast()
+    {
+        if(Session::has('success-fast')){
+            return view('frontend.thankyoufast');
+        }
+        else{
+            return abort('404');
+        }
+        
+    }
+
     public function categoryView($slug)
     {
 

@@ -114,6 +114,9 @@ Route::get('cart/index', 'Frontend\indexController@Cart')->name('cart-tgtl');
 Route::get('thank-you', 'Frontend\categoryController@thank')->name('thankyou');
 
 
+Route::get('thank-you-fast-number', 'Frontend\categoryController@thankfast')->name('thankyoufast');
+
+
 // Route::any('/ckfinder/connector', '\CKSource\CKFinderBridge\Controller\CKFinderController@requestAction')
 //     ->name('ckfinder_connector');
 
