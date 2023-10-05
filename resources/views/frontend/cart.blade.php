@@ -6023,7 +6023,7 @@ ul.menu-bottom li.level0 span.click-mobile.active {
 							                    </g>
 							                </g>
 							            </svg> <span>Quay lại mua thêm sản phẩm khác</span> </a> 
-							            <button type="submit" class="button-submit btn btn-primary" href="javascript:void(0);" title=""> Thanh toán </button> </div> 
+							            <button type="submit" class=" btn btn-primary" href="javascript:void(0);" title=""> Thanh toán </button> </div> 
 							</form>
                         </div> <!-- end info -->
                     </div>
