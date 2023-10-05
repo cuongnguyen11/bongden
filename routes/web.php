@@ -111,7 +111,7 @@ Route::get('cart/index', 'Frontend\indexController@Cart')->name('cart-tgtl');
 
 // Route::get('inCrawl', 'crawlController@allproduct');
 
-Route::get('thank-you', 'categoryController@thank')->name('thankyou');
+Route::get('thank-you', 'Frontend\categoryController@thank')->name('thankyou');
 
 
 // Route::any('/ckfinder/connector', '\CKSource\CKFinderBridge\Controller\CKFinderController@requestAction')
