@@ -2,6 +2,48 @@
 @section('content')
 
 <main id="main" class="">
+
+    <?php 
+            
+
+                $list_product_cate_hide = App\Models\groupProduct::select('product_id','id')->where('active', 0)->get();
+
+                $list_product_hide = [];
+
+
+
+                if(!empty($list_product_cate_hide) && $list_product_cate_hide->count()>0){
+
+                    foreach ($list_product_cate_hide as $value) {
+
+                        $ar_list = json_decode($value->product_id);
+
+                        if(isset($ar_list)){
+                             foreach ($ar_list as  $val) {
+
+                                array_push($list_product_hide, $val);
+                               
+                            }
+                        }
+
+                    }
+
+                }
+
+                $list_product_hide = array_unique($list_product_hide);
+
+        ?>
+
+    <style type="text/css">
+        
+        .box-image .image-none{
+            height: 200px;
+        }
+
+        .box-text.text-center{
+            height: 94px;
+        }
+    </style>
     <div class="row category-page-row">
 
         @include('include.sizebar')
@@ -17,7 +59,11 @@
                 <div class="products row row-small large-columns-4 medium-columns-3 small-columns-2">
 
                     @if(isset($data))
+
+                    
                     @foreach($data as $value)
+
+                    @if(!in_array($value->id, $list_product_hide))
                     <div class="product-small col has-hover product type-product post-8037 status-publish first instock product_cat-den-led-bup product_cat-den-led-bup-tru-dos has-post-thumbnail shipping-taxable purchasable product-type-simple">
                         <div class="col-inner">
                             <div class="badge-container absolute left top z-1"></div>
@@ -38,6 +84,7 @@
                             </div>
                         </div>
                     </div>
+                    @endif
                     @endforeach
                     @endif
 

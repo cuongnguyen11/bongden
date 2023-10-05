@@ -2,8 +2,10 @@
 @section('content')
 
 <main id="main" class="">
+    
     <div class="row category-page-row">
 
+        
         @include('include.sizebar')
 
         <div class="col large-9">

@@ -152,7 +152,7 @@
                                         </li>    
 
                                         <?php 
-                                            $menu = App\Models\groupProduct::where('level', 0)->get();
+                                            $menu = App\Models\groupProduct::where('level', 0)->where('active', 1)->get();
                                         ?>
 
                                         @if(!empty($menu) && $menu->count()>0)
@@ -163,7 +163,7 @@
 
                                         <?php 
                                                 
-                                            $parent_menu = App\Models\groupProduct::where('parent_id', $val->id)->select('name', 'link')->get();
+                                            $parent_menu = App\Models\groupProduct::where('parent_id', $val->id)->select('name', 'link')->where('active', 1)->get();
                                         ?>    
                                         <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom  {{ !empty($parent_menu) && $parent_menu->count()>0?'mega-menu-item-has-children':''  }}  mega-align-bottom-left mega-menu-flyout mega-menu-item-5437' id='mega-menu-item-5437'>
 
@@ -231,7 +231,7 @@
                     </div>
                     <div id="text-4" class="col pb-0 widget widget_text">
                         <div class="textwidget">
-                            <p><span style="font-size: 120%;"><strong>CHÍNH SÁCH:</strong></span></p>
+                            <p><span style="font-size: 120%;"><strong>CHÍNH SÁCH :</strong></span></p>
                             <ul>
                                 <?php
                                     $posts  = App\Models\post::where('category', 5)->get();

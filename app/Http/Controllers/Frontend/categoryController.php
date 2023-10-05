@@ -421,9 +421,9 @@ class categoryController extends Controller
 
                 $Group_product_active = $Group_product->active;
 
-                $data = [];
 
                 if($Group_product_active==1){
+
 
                     $Group_product = json_decode($Group_product->product_id);
 
