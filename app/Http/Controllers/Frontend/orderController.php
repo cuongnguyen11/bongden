@@ -116,7 +116,7 @@ class orderController extends Controller
 
         Session::flash('success', 'Mua thành công sản phẩm!'); 
 
-        return redirect('/');
+        return redirect(route('thankyou'));
     
     }
 

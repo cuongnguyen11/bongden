@@ -35,6 +35,16 @@ use Session;
 class categoryController extends Controller
 {
 
+    public function thank()
+    {
+        if(Session::has('success')){
+            return view('frontend.thankyou');
+        }
+        else{
+            return abort('404');
+        }
+        
+    }
 
     public function categoryView($slug)
     {
