@@ -13,7 +13,7 @@ root {
   --blue-color: #00aeef;
   --orange-color: #ef4e22;
 }
-body,
+/*body,
 div,
 dl,
 dt,
@@ -38,15 +38,15 @@ p,
 blockquote {
   margin: 0;
   padding: 0;
-}
-body {
+}*/
+/*body {
   font: 14px/18px Helvetica, Arial, "DejaVu Sans", "Liberation Sans", Freesans,
     sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
   background: #fff;
-}
+}*/
 blockquote {
   position: relative;
   padding: 8px 0px 8px 13px;
