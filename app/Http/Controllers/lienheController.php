@@ -42,7 +42,7 @@ class lienheController extends Controller
         $callphone->product_id = $request->product_id;
         $callphone->save();
 
-        Session::flash('successfast', 'Mua thành công sản phẩm!'); 
+        Session::flash('success-fast', 'Mua thành công sản phẩm!'); 
         return route('thankyoufast');
     }
 
