@@ -8,7 +8,9 @@
                     <div class="article-inner ">
                         <header class="entry-header">
                             <div class="entry-header-text entry-header-text-bottom text-left">
+                                @if($data->id!=5)
                                 <h6 class="entry-category is-xsmall"> <a href="{{ route('details', $data->link) }}" rel="category tag">{{ $name_cate }}</a></h6>
+                                @endif
                                 <h1 class="entry-title">{{ strip_tags($data->title) }}</h1>
                                 <div class="entry-divider is-divider small"></div>
                             </div>
