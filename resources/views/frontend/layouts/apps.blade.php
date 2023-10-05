@@ -222,7 +222,7 @@
                                 <tbody>
                                     <tr>
                                         <td style="width: 40px;"><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjY2ZkNGRiIi8+PC9zdmc+" class="size-full wp-image-7374 alignleft" data-src="https://tlclighting.com.vn/wp-content/uploads/2020/12/home-icon-min.png" alt="" width="20" height="20" /></td>
-                                        <td style="width: auto;"><strong>Trụ sở chính: </strong>{{ @$info_cpn->address_cpn }}</td>
+                                        <td style="width: auto;"><strong>Trụ sở chính: </strong>{!! @$info_cpn->address_cpn !!}</td>
                                     </tr>
                                    
                                 </tbody>

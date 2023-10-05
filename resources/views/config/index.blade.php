@@ -293,6 +293,8 @@
 
     });
 
+    CKEDITOR.replace('address_company')
+
 
     $('#fragment-3 .update').click(function(){
             
