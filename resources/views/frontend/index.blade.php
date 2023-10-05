@@ -41,7 +41,7 @@
         }
 
         .box-text.text-center{
-            height: 94px;
+            height: 124px;
         }
     </style>
     <div class="row category-page-row">
