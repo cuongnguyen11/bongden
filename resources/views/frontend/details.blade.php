@@ -610,7 +610,44 @@
                                         <div class="tab-title cls">
                                             <div class="cat-title-main" id="characteristic-label"> <span>Sản phẩm liên quan</span> </div>
                                         </div>
-                                        <div class="product_grid"> @if(isset($other_product)) @foreach($other_product as $value) @if($value->active==1 && $value->id != $data->id) <div class="item">
+                                        <div class="product_grid"> 
+                                            @if(isset($other_product)) 
+
+                                            <?php 
+
+                                            // list sản phẩm ẩn đi
+
+                                            $list_product_cate_hide = App\Models\groupProduct::select('product_id','id')->where('active', 0)->get();
+
+                                            $list_product_hide = [];
+
+
+
+                                            if(!empty($list_product_cate_hide) && $list_product_cate_hide->count()>0){
+
+                                                foreach ($list_product_cate_hide as $value) {
+
+                                                    $ar_list = json_decode($value->product_id);
+
+                                                    if(isset($ar_list)){
+                                                         foreach ($ar_list as  $val) {
+
+                                                            array_push($list_product_hide, $val);
+                                                           
+                                                        }
+                                                    }
+
+                                                }
+
+                                            }
+
+                                            $list_product_hide = array_unique($list_product_hide);
+
+                                            ?>
+                                            @foreach($other_product as $value) 
+                                            @if($value->active==1 && $value->id != $data->id) 
+                                            @if(!in_array($value->id, $list_product_hide) )
+                                            <div class="item">
                                                 <figure class="product_image "> <a href="{{ route('details', $value->Link) }}" title="{{ $value->Name }}"> <img class="lazy after-lazy" alt="{{ $value->Name }}" src="{{ asset($value->Image) }}" data-srcset="{{ asset($value->Image) }}"> </a> </figure>
                                                 <div> <a href="{{ route('details', $value->Link) }}" title="{{ $value->Name }}" class="name"> {{ $value->Name }} </a> </div>
                                                 <div class="price_arae">
@@ -618,7 +655,12 @@
                                                 </div>
                                                 <div class="gift"> </div>
                                                 <div class="clear"></div>
-                                            </div> @endif @endforeach @endif </div>
+                                            </div> 
+                                            @endif
+                                            @endif 
+                                            @endforeach 
+                                            @endif 
+                                        </div>
                                     </div>
                                 </div>
                                 <div id="prodetails_tab20" class="prodetails_tab">

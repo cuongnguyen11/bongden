@@ -3,8 +3,7 @@
 
 <main id="main" class="">
 
-    <?php 
-            
+        <?php 
 
                 $list_product_cate_hide = App\Models\groupProduct::select('product_id','id')->where('active', 0)->get();
 
