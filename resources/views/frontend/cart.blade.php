@@ -6023,7 +6023,9 @@ ul.menu-bottom li.level0 span.click-mobile.active {
 							                    </g>
 							                </g>
 							            </svg> <span>Quay lại mua thêm sản phẩm khác</span> </a> 
+                          @if($totalPrice>0)
 							            <button type="submit" class="btn-primary button-submit btn" href="javascript:void(0);" title=""> Thanh toán </button> </div> 
+                          @endif
 							</form>
                         </div> <!-- end info -->
                     </div>
