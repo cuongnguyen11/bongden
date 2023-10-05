@@ -286,9 +286,7 @@
                                 </svg></div>
                         </div>
                     </div>
-                    <div class="footer-primary pull-left">
-                        <div class="copyright-footer"> <strong>©2023 THIENLOC - ALL RIGHTS RESERVED</strong></div>
-                    </div>
+                    
                 </div>
             </div> <a href="#top" class="back-to-top button icon invert plain fixed bottom z-1 is-outline hide-for-medium circle" id="top-link"><i class="icon-angle-up"></i></a>
         </footer>
