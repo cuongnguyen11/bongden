@@ -5820,8 +5820,8 @@ ul.menu-bottom li.level0 span.click-mobile.active {
 
 .btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #007bff !important;
+    border-color: #007bff !important;
 }
 
 	
