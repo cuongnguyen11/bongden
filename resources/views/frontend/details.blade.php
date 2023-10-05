@@ -940,9 +940,8 @@
                 },
                 success: function(result){
         
-                   
-    
-                    alert('Gửi thành công!')
+                    window.location.href = result;
+                    
                     
                 }
             });
