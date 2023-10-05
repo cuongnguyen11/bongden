@@ -131,6 +131,19 @@ class showController extends Controller
         
     }
 
+    public function addInfoCpn(Request $request)
+    {
+        $name = trim($request->name_company);
+
+        $address = trim($request->address_company);
+
+        DB::table('info_company')->insert(['name_cpn'=>$name, 'address_cpn'=>$address]);
+
+        return redirect()->back();
+
+
+    }
+
     public function createInfo(Request $request)
     {
 

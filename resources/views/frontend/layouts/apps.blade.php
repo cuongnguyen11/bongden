@@ -207,18 +207,22 @@
 
         @yield('content')
 
+        <?php 
+
+            $info_cpn = DB::table('info_company')->get()->last();
+        ?>
     
         <footer id="footer" class="footer-wrapper">
             <div class="footer-widgets footer footer-1">
                 <div class="row large-columns-3 mb-0">
                     <div id="text-5" class="col pb-0 widget widget_text">
                         <div class="textwidget">
-                            <p><span style="font-size: 120%;"><strong>CÔNG TY CP </strong></span></p>
+                            <p><span style="font-size: 120%;"><strong>{{ @$info_cpn->name_cpn  }} </strong></span></p>
                             <table style="width: 100%; border-collapse: collapse; border-style: hidden;" border="0" cellspacing="0">
                                 <tbody>
                                     <tr>
                                         <td style="width: 40px;"><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjY2ZkNGRiIi8+PC9zdmc+" class="size-full wp-image-7374 alignleft" data-src="https://tlclighting.com.vn/wp-content/uploads/2020/12/home-icon-min.png" alt="" width="20" height="20" /></td>
-                                        <td style="width: auto;"><strong>Trụ sở chính: </strong>Tầng 7, tòa nhà Nam Cường Building, đường Tố Hữu, Q. Hà Đông, TP Hà Nội</td>
+                                        <td style="width: auto;"><strong>Trụ sở chính: </strong>{{ @$info_cpn->address_cpn }}</td>
                                     </tr>
                                    
                                 </tbody>
@@ -227,7 +231,7 @@
                     </div>
                     <div id="text-4" class="col pb-0 widget widget_text">
                         <div class="textwidget">
-                            <p><span style="font-size: 120%;"><strong>CHÍNH SÁCH TLC LIGHTING:</strong></span></p>
+                            <p><span style="font-size: 120%;"><strong>CHÍNH SÁCH:</strong></span></p>
                             <ul>
                                 <?php
                                     $posts  = App\Models\post::where('category', 5)->get();
@@ -254,9 +258,9 @@
                                     <img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMyIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDMzIDM0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjY2ZkNGRiIi8+PC9zdmc+" class="size-full wp-image-6456 alignleft" data-src="https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-55.png" alt="tlclighting" width="33" height="34" data-srcset="https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-55.png 33w, https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-55-31x31.png 31w" data-sizes="(max-width: 33px) 100vw, 33px" /> 
                                     <img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMyIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDMzIDM0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjY2ZkNGRiIi8+PC9zdmc+" class="size-full wp-image-6457 alignleft" data-src="https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-56.png" alt="tlclighting" width="33" height="34" data-srcset="https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-56.png 33w, https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-56-31x31.png 31w" data-sizes="(max-width: 33px) 100vw, 33px" /></span>
                             </div>
-                            <div class="fanpagefb" style="margin-top: 10px; display: inline-block; width: 100%;"><a href="#" target="_blank" rel="noopener noreferrer">
+                            <!-- <div class="fanpagefb" style="margin-top: 10px; display: inline-block; width: 100%;"><a href="#" target="_blank" rel="noopener noreferrer">
                                 <img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNTAiIGhlaWdodD0iMTkyIiB2aWV3Qm94PSIwIDAgMzUwIDE5MiI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2NmZDRkYiIvPjwvc3ZnPg==" class="aligncenter wp-image-9074 size-full" data-src="https://tlclighting.com.vn/wp-content/uploads/2022/01/footer.png" alt="footer-facebook" width="350" height="192" data-srcset="https://tlclighting.com.vn/wp-content/uploads/2022/01/footer.png 350w, https://tlclighting.com.vn/wp-content/uploads/2022/01/footer-300x165.png 300w, https://tlclighting.com.vn/wp-content/uploads/2022/01/footer-31x17.png 31w" data-sizes="(max-width: 350px) 100vw, 350px" /></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -590,7 +594,7 @@
     <style></style>
     <script src="data:text/javascript;base64,dmFyIHBvc3RfZ3JpZF92YXJzPXsic2l0ZVVybCI6Imh0dHBzOlwvXC90bGNsaWdodGluZy5jb20udm4ifQ==" defer></script>
     <script src="{{ asset('js/main1.js') }}"></script>
-</body> <!-- Mirrored from tlclighting.com.vn/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Aug 2023 03:56:43 GMT -->
+</body> 
 
 </html> <!-- Page optimized by LiteSpeed Cache @2023-08-26 08:56:36 -->
 <!-- Page generated by LiteSpeed Cache 5.4 on 2023-08-26 08:56:36 -->

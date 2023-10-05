@@ -9,6 +9,8 @@
 
     $info_site =  DB::table('contact')->get()->last();
 
+    $info_cpn = DB::table('info_company')->get()->last();
+
 ?>
 
 <style type="text/css">
@@ -23,6 +25,10 @@
     #fragment-4{
         display: none;
     }
+
+     #fragment-5{
+        display: none;
+    }
 </style>
 <div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
     <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
@@ -35,6 +41,8 @@
         <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="fragment-3" aria-labelledby="ui-id-2" aria-selected="false"><a href="#fragment-1" class="a_fragment_2 ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2"><span>Thông tin liên hệ</span></a></li>
 
         <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="fragment-4" aria-labelledby="ui-id-2" aria-selected="false"><a href="#fragment-1" class="a_fragment_2 ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4"><span>Form email</span></a></li>
+
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="fragment-5" aria-labelledby="ui-id-2" aria-selected="false"><a href="#fragment-1" class="a_fragment_2 ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4"><span>Thông tin doanh nghiệp</span></a></li>
 
         
     </ul>
@@ -208,6 +216,37 @@
             </div>
 
             
+           
+
+            <div class="button">
+                <button type="submit" class="btn btn-primary update">Update</button>
+            </div>
+        </div>
+    </form>
+
+
+
+    <form method="post" action="{{ route('add-cpn-info') }}">
+
+        @csrf
+
+        <div id="fragment-5" aria-labelledby="ui-id-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false" >
+            <div class="form-group">
+                <label class="col-sm-2 col-xs-12 control-label">Tên công ty</label>
+                <div class="col-sm-9 col-xs-12">
+                    <input class="form-control" type="text" name="name_company" value="{{ @$info_cpn->name_cpn }}"  size="70" id="name_company">                             
+                </div>
+            </div>
+
+            <div class="form-group">Địa chỉ công ty</label>
+                <div class="col-sm-9 col-xs-12">
+
+                    <textarea name="address_company" cols="70" rows="10">{{ @$info_cpn->address_cpn }}</textarea>
+                                       
+                </div>
+            </div>
+
+           
            
 
             <div class="button">

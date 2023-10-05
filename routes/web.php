@@ -216,6 +216,8 @@ Route::group(['prefix' => 'admins','middleware' => 'auth'], function() {
 
     Route::post('insert-contact', 'showController@addContact')->name('add-Contact');
 
+    Route::post('insert-cpn-info', 'showController@addInfoCpn')->name('add-cpn-info');
+
     Route::post('insert-info-site', 'showController@createInfo')->name('insert-info-site');
 
     Route::get('config-site', function () {
