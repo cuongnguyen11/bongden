@@ -24,9 +24,9 @@ class showController extends Controller
 
         $list_product_code_php = File::get($path);
 
-        $convert = ['{name}', '{address}', '{email}', '{phone_number}', '{orderId}'];
+        $convert = ['{name}', '{address}', '{email}', '{phone_number}', '{orderId}', '{total_price}'];
 
-        $change  = ['{{ $name }}', '{{ $address }}', '{{ $email }}', '{{ $phone_number }}', '{{$orderId}}'];
+        $change  = ['{{ $name }}', '{{ $address }}', '{{ $email }}', '{{ $phone_number }}', '{{$total_price}}'];
 
 
 

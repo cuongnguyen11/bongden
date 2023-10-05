@@ -75,7 +75,7 @@
         @endif
         <tr>
             <td colspan="4"><strong>Tạm tính:</strong></td>
-            <td><strong>0₫</strong></td>
+            <td><strong>{{ $total_price }}₫</strong></td>
         </tr>
         <tr>
             <td colspan="4"><strong>Mã giảm giá:</strong></td>
@@ -87,7 +87,7 @@
         </tr>
         <tr>
             <td colspan="4"><strong>Thanh toán:</strong></td>
-            <td><strong>0₫</strong></td>
+            <td><strong>{{ $total_price }}₫</strong></td>
         </tr>
     </tbody>
 </table>
