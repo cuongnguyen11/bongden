@@ -925,6 +925,8 @@
                     },
                     success: function(result){
                          $('#modal-comment').modal('hide');
+
+                         $('#cmt_name').val('');
                        
                       alert('Gửi thành công, xin vui lòng chờ quản trị viên kiểm duyệt!');
                     }
