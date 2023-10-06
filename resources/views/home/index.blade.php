@@ -58,6 +58,10 @@
         padding: 0 0 0 8px;
     }
 
+    .remove{
+        font-size: 12px;
+    }
+
     td{
         font-size: 12px;
     }
@@ -345,7 +349,7 @@
                                         {!! Form::open(['route' => ['comment.destroy', $comments->id], 'method' => 'delete']) !!}
                                        
                                             
-                                            <button type="submit" class="btn btn-danger btn-xs" onclick="return confirm('Are you sure?')">Xóa</button>
+                                            <button type="submit" class="btn btn-danger btn-xs remove" onclick="return confirm('Are you sure?')">Xóa</button>
                                         {!! Form::close() !!}
                                     </td>
                                 </tr>
