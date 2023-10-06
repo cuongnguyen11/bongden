@@ -342,7 +342,11 @@
                                                        
                                     </td>
                                     <td>
-                                        <a href="">Xóa</a>
+                                        {!! Form::open(['route' => ['comment.destroy', $comments->id], 'method' => 'delete']) !!}
+                                       
+                                            
+                                            <button type="submit" class="btn btn-danger btn-xs" onclick="return confirm('Are you sure?')">Xóa</button>
+                                        {!! Form::close() !!}
                                     </td>
                                 </tr>
                                 @endforeach
