@@ -483,6 +483,9 @@ class AjaxController extends Controller
         
             $input['content'] = $request->content;
             $input['product_id'] = $request->product_id;
+            $input['phone'] = $request->phone_cmt;
+            $input['name'] = $request->name_cmt;
+
             $input['active'] = 0;
             $input['created_at'] = date('Y-m-d H:i:s');
             $input['updated_at'] = date('Y-m-d H:i:s');

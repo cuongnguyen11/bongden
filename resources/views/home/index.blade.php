@@ -302,13 +302,15 @@
                     <!--Start khach hang đánh giá-->
                     <div>&nbsp;</div>
                     <div class="pic icon_arrow left"></div>
-                    <div class="text_arrow left">Bình luận chưa duyệt</div>
+                    <div class="text_arrow left">Bình luận chưa duyệt  (<a href="{{ route('comment.index') }}">Xem toàn bộ danh sách</a>)</div>
                     <div class="clear"></div>
                     <div style="border:1px solid #6a8ab9 ">
                         <table width="100%" class="table_public" border="1" bordercolor="#e0e0e0">
                             <tbody>
                                 <tr class="table_public_tr">
                                     <td width="40">STT</td>
+                                    <td>Tên</td>
+                                    <td>Số điện thoại</td>
                                     <td width="180">Sản phẩm</td>    
                                     <td>Nội dung</td>
                                     <td>Active</td>
@@ -324,6 +326,8 @@
                                 @foreach($comment as $key => $comments)
                                 <tr onmouseover="this.className='row-hover'" onmouseout="this.className=''" class="">
                                     <td class="stt">{{ $key+1 }}</td>
+                                    <td>{{ $comments->name??'' }}</td>
+                                    <td>{{ $comments->phone??'' }}</td>
                                     <td class="email">
                                         <?php 
                                             $products_info = App\Models\product::find($comments->product_id)

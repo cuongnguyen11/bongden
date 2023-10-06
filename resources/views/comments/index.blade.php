@@ -93,7 +93,8 @@
                             <tbody>
                                 <tr class="table_public_tr">
                                     <td width="40">STT</td>
-                                  
+                                    <td>Tên</td>
+                                    <td>Số điện thoại</td>
                                     <td  width="130">Content</td>
                                     <td width="120">Sản phẩm</td>
                                     <td width="120">Active</td>
@@ -119,7 +120,8 @@
                                 @isset($link)
                                 <tr>
                                     <td>{{$dem}}</td>
-                                   
+                                     <td>{{ $comments->name??'' }}</td>
+                                    <td>{{ $comments->phone??'' }}</td>
                                   
                                     <td>{!! @$comments->content !!}</td>
                                     <td><a href="{{ route('details', $link->Link) }}" target="_blank">{{ $link->Name??'' }}</a></td>

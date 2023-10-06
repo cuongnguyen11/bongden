@@ -706,7 +706,7 @@
                                                 <div class="_textarea"> 
                                                     <textarea name="content" id="cmt_content" placeholder="Viết bình luận của bạn..." required></textarea> 
                                                 </div> 
-                                                <button type="submit" class="btn-comment-mb">Gửi bình luận </button>
+                                                <button type="button" class="btn-comment-mb send_cmt">Gửi bình luận </button>
                                                
                                             </form>
                                         </div>
@@ -745,6 +745,8 @@
     </div>
     <div class="clear"></div>
 
+    
+
 </div>
 
 
@@ -753,6 +755,50 @@
     </a> <a href="javascript:void(0)" onclick="addCartFast({{ $data->id }})" class="btn-dathang" data-toggle="modal">
         <font>Thêm vào giỏ hàng </font>
     </a> 
+</div>
+
+<div class="modal fade" id="modal-comment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            
+                <div class="wrap_r cls display-open">
+                    <div class="title-mb">
+                        Thông tin người gửi
+                        <span class="close-md-comment">
+                            <svg height="16px" viewBox="0 0 64 64" enable-background="new 0 0 64 64">
+                                <g>
+                                    <path fill="black" d="M28.941,31.786L0.613,60.114c-0.787,0.787-0.787,2.062,0,2.849c0.393,0.394,0.909,0.59,1.424,0.59   c0.516,0,1.031-0.196,1.424-0.59l28.541-28.541l28.541,28.541c0.394,0.394,0.909,0.59,1.424,0.59c0.515,0,1.031-0.196,1.424-0.59   c0.787-0.787,0.787-2.062,0-2.849L35.064,31.786L63.41,3.438c0.787-0.787,0.787-2.062,0-2.849c-0.787-0.786-2.062-0.786-2.848,0   L32.003,29.15L3.441,0.59c-0.787-0.786-2.061-0.786-2.848,0c-0.787,0.787-0.787,2.062,0,2.849L28.941,31.786z"></path>
+                                </g>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="wrap_loginpost">
+                        <aside class="_right">
+                            <div>           
+                                <input class="txt_input" required="" name="name" type="text" placeholder="Họ tên (bắt buộc)" id="cmt_name" autocomplete="off" value="">
+                            </div>
+                            <div>  
+                                <input class="txt_input" required="" name="phone" type="text" placeholder="Số điện thoại(bắt buộc)" id="cmt_phone" value="">     
+                            </div>
+
+                            <input type="hidden" name="comment" value="" id="comments_get">
+                        </aside>
+                    </div>
+                    <div class="wrap_submit mbl">
+                        <div class="pull-right clearfix">
+
+                            <button class="_btn_comment send_comment_form btn-primary">Gửi bình luận</button>
+                            
+                        </div>
+                    </div>
+                </div>
+
+           
+            
+
+        </div>
+    </div>
 </div>
 
 
@@ -771,9 +817,26 @@
         // alert(rows[i]);
         $(rows[i]).addClass("tr-0");
     }
-
     
     values = 5;
+
+    $('.send_cmt').click(function(){
+        if($('#cmt_content').val()===''){
+            alert('vui lòng nhập bình luận');
+
+        }
+        else{
+
+            $('#comments_get').val($('#cmt_content').val());
+            $('#modal-comment').modal('show');
+        }
+
+    })  
+
+    $('.close-md-comment').click(function(){
+        $('#modal-comment').modal('hide');
+    })
+
     function submit_rate() {
 
         $.ajaxSetup({
@@ -816,6 +879,8 @@
                
             },
             success: function(result){
+
+
                 $('#cmt_content').val('');
                
               alert('Gửi thành công, xin vui lòng chờ quản trị viên kiểm duyệt!');
@@ -824,33 +889,59 @@
 
     }
 
-    function submit_comment() {
+    $('.send_comment_form').click(function(){
+
+        if($('#cmt_name')===''){
+            alert('vui lòng nhập tên');
+        }
+        else if($('#cmt_phone')===''){
+            alert('vui lòng nhập số điện thoại');
+        }
+        else{
+
+            const regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+            
+            phone_cmt = $('#cmt_phone').val();
+
+            if(regex.test(phone_cmt)){
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+            
+                $.ajax({
+                    type: 'POST',
+                    url: "{{ route('comment') }}",
+                    data: {
+                        product_id: {{ $data->id }},
+                       
+                        content:$('#cmt_content').val(),
+
+                        phone_cmt: phone_cmt,
+
+                        name_cmt: $('#cmt_name').val(),
+
+                    },
+                    success: function(result){
+                         $('#modal-comment').modal('hide');
+                       
+                      alert('Gửi thành công, xin vui lòng chờ quản trị viên kiểm duyệt!');
+                    }
+                });
+            }
+            else{
+
+                alert('số điện thoại không đúng định dạng vui lòng nhập lại');
+            }
+            
+        }
+
         
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
-    
-        $.ajax({
-            type: 'POST',
-            url: "{{ route('comment') }}",
-            data: {
-                product_id: {{ $data->id }},
-               
-                content:$('#cmt_content').val(),
-               
-            },
-            success: function(result){
-                $('#cmt_content').val('');
-               
-              alert('Gửi thành công, xin vui lòng chờ quản trị viên kiểm duyệt!');
-            }
-        });
 
+    })
 
-    }
-
+   
     function addToCart(id) {
     
         $.ajaxSetup({

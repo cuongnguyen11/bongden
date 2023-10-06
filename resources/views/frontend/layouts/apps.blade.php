@@ -406,54 +406,8 @@
         #button-contact-vr {transform: scale(0.9);}
     </style>
 
-    <script type="text/javascript">
-        
-
-        $(function() {
-            $("#kws").autocomplete({
-
-                minLength: 1,
-                
-                source: function(request, response) {
-                    $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    }
-
-
-                    });
-                    $.ajax({
-
-                        url: "{{  route('sugest-click')}}",
-                        type: "POST",
-                        data: {
-                            "_token": "{{ csrf_token() }}",
-                            product:$('#kws').val()
-                        },
-                        dataType: "json",
-                        success: function (data) {
-                            var items = data;
-
-                            response(items);
-
-                            $('#ui-id-1').html();
-
-                            $('#ui-id-1').html(data);
-                        
-                        }
-                    });
-                },
-                html:true,
-            });
-        });
-
-
-
-    </script>
-    <script
-  src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"
-  integrity="sha256-UnTxHm+zKuDPLfufgEMnKGXDl6fEIjtM+n1Q6lL73ok="
-  crossorigin="anonymous"></script>
+   
+   
     <script type="text/javascript" src="data:text/javascript;base64,JCgnLmR2bHMtc3VibWl0JykuY2xpY2soZnVuY3Rpb24oKXskKCIudHRiaDAyMyIpLmFkZENsYXNzKCJoaWRlYmgiKX0pOyQoJy5kdmxzX3Jlc3VsdF93cmFwJykuY2xpY2soZnVuY3Rpb24oKXskKCIudHRiaDAyMyIpLmFkZENsYXNzKCJoaWRlYmgyIil9KQ==" defer></script>
     <div id="login-form-popup" class="lightbox-content mfp-hide">
         <div class="woocommerce-notices-wrapper"></div>
@@ -552,16 +506,16 @@
     <script type="text/javascript" src="data:text/javascript;base64,dmFyIGM9ZG9jdW1lbnQuYm9keS5jbGFzc05hbWU7Yz1jLnJlcGxhY2UoL3dvb2NvbW1lcmNlLW5vLWpzLywnd29vY29tbWVyY2UtanMnKTtkb2N1bWVudC5ib2R5LmNsYXNzTmFtZT1j" defer></script>
     <script type="text/javascript" src="data:text/javascript;base64,dmFyIGJVPSdodHRwczovL3RsY2xpZ2h0aW5nLmNvbS52bi93cC1jb250ZW50L3BsdWdpbnMvd3AteW91dHViZS1seXRlL2x5dGUvJzt2YXIgbU9zPW51bGw7c3R5bGU9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc3R5bGUnKTtzdHlsZS50eXBlPSd0ZXh0L2Nzcyc7cnVsZXM9ZG9jdW1lbnQuY3JlYXRlVGV4dE5vZGUoIi5seXRlLXdyYXBwZXItYXVkaW8gZGl2LCAubHl0ZS13cmFwcGVyIGRpdiB7bWFyZ2luOjBweDsgb3ZlcmZsb3c6aGlkZGVuO30gLmx5dGUsLmx5TWV7cG9zaXRpb246cmVsYXRpdmU7cGFkZGluZy1ib3R0b206NTYuMjUlO2hlaWdodDowO292ZXJmbG93OmhpZGRlbjtiYWNrZ3JvdW5kLWNvbG9yOiM3Nzc7fSAuZm91cnRocmVlIC5seU1lLCAuZm91cnRocmVlIC5seXRlIHtwYWRkaW5nLWJvdHRvbTo3NSU7fSAubGlkZ2V0e21hcmdpbi1ib3R0b206NXB4O30gLmxpZGdldCAubHl0ZSwgLndpZGdldCAubHlNZSB7cGFkZGluZy1ib3R0b206MCFpbXBvcnRhbnQ7aGVpZ2h0OjEwMCUhaW1wb3J0YW50O30gLmx5dGUtd3JhcHBlci1hdWRpbyAubHl0ZXtoZWlnaHQ6MzhweCFpbXBvcnRhbnQ7b3ZlcmZsb3c6aGlkZGVuO3BhZGRpbmc6MCFpbXBvcnRhbnR9IC5seU1lIGlmcmFtZSwgLmx5dGUgaWZyYW1lLC5seXRlIC5wTHtwb3NpdGlvbjphYnNvbHV0ZSAhaW1wb3J0YW50O3RvcDowO2xlZnQ6MDt3aWR0aDoxMDAlO2hlaWdodDoxMDAlIWltcG9ydGFudDtiYWNrZ3JvdW5kOm5vLXJlcGVhdCBzY3JvbGwgY2VudGVyICMwMDA7YmFja2dyb3VuZC1zaXplOmNvdmVyO2N1cnNvcjpwb2ludGVyfSAudEN7bGVmdDowO3Bvc2l0aW9uOmFic29sdXRlO3RvcDowO3dpZHRoOjEwMCV9IC50Q3tiYWNrZ3JvdW5kLWltYWdlOmxpbmVhci1ncmFkaWVudCh0byBib3R0b20scmdiYSgwLDAsMCwwLjYpLHJnYmEoMCwwLDAsMCkpfSAudFR7Y29sb3I6I0ZGRjtmb250LWZhbWlseTpSb2JvdG8sc2Fucy1zZXJpZjtmb250LXNpemU6MTZweDtoZWlnaHQ6YXV0bzt0ZXh0LWFsaWduOmxlZnQ7cGFkZGluZzo1cHggMTBweCA1MHB4IDEwcHh9IC5wbGF5e2JhY2tncm91bmQ6bm8tcmVwZWF0IHNjcm9sbCAwIDAgdHJhbnNwYXJlbnQ7d2lkdGg6ODhweDtoZWlnaHQ6NjNweDtwb3NpdGlvbjphYnNvbHV0ZTtsZWZ0OjQzJTtsZWZ0OmNhbGMoNTAlIC0gNDRweCk7bGVmdDotd2Via2l0LWNhbGMoNTAlIC0gNDRweCk7dG9wOjM4JTt0b3A6Y2FsYyg1MCUgLSAzMXB4KTt0b3A6LXdlYmtpdC1jYWxjKDUwJSAtIDMxcHgpO30gLndpZGdldCAucGxheSB7dG9wOjMwJTt0b3A6Y2FsYyg0NSUgLSAzMXB4KTt0b3A6LXdlYmtpdC1jYWxjKDQ1JSAtIDMxcHgpO3RyYW5zZm9ybTpzY2FsZSgwLjYpOy13ZWJraXQtdHJhbnNmb3JtOnNjYWxlKDAuNik7LW1zLXRyYW5zZm9ybTpzY2FsZSgwLjYpO30gLmx5dGU6aG92ZXIgLnBsYXl7YmFja2dyb3VuZC1wb3NpdGlvbjowIC02NXB4O30gLmx5dGUtYXVkaW8gLnBMe21heC1oZWlnaHQ6MzhweCFpbXBvcnRhbnR9IC5seXRlLWF1ZGlvIGlmcmFtZXtoZWlnaHQ6NDM4cHghaW1wb3J0YW50fSAuY3RybHtiYWNrZ3JvdW5kOnJlcGVhdCBzY3JvbGwgMCAtMjIwcHggcmdiYSgwLDAsMCwwLjMpO3dpZHRoOjEwMCU7aGVpZ2h0OjQwcHg7Ym90dG9tOjBweDtsZWZ0OjA7cG9zaXRpb246YWJzb2x1dGU7fSAubHl0ZS13cmFwcGVyIC5jdHJse2Rpc3BsYXk6bm9uZX0uTGN0cmx7YmFja2dyb3VuZDpuby1yZXBlYXQgc2Nyb2xsIDAgLTEzN3B4IHRyYW5zcGFyZW50O3dpZHRoOjE1OHB4O2hlaWdodDo0MHB4O2JvdHRvbTowO2xlZnQ6MDtwb3NpdGlvbjphYnNvbHV0ZX0gLlJjdHJse2JhY2tncm91bmQ6bm8tcmVwZWF0IHNjcm9sbCAtNDJweCAtMTc5cHggdHJhbnNwYXJlbnQ7d2lkdGg6MTE3cHg7aGVpZ2h0OjQwcHg7Ym90dG9tOjA7cmlnaHQ6MDtwb3NpdGlvbjphYnNvbHV0ZTtwYWRkaW5nLXJpZ2h0OjEwcHg7fS5seXRlLWF1ZGlvIC5wbGF5e2Rpc3BsYXk6bm9uZX0ubHl0ZS1hdWRpbyAuY3RybHtiYWNrZ3JvdW5kLWNvbG9yOnJnYmEoMCwwLDAsMSl9Lmx5dGUgLmhpZGRlbntkaXNwbGF5Om5vbmV9Iik7aWYoc3R5bGUuc3R5bGVTaGVldCl7c3R5bGUuc3R5bGVTaGVldC5jc3NUZXh0PXJ1bGVzLm5vZGVWYWx1ZX1lbHNle3N0eWxlLmFwcGVuZENoaWxkKHJ1bGVzKX1kb2N1bWVudC5nZXRFbGVtZW50c0J5VGFnTmFtZSgnaGVhZCcpWzBdLmFwcGVuZENoaWxkKHN0eWxlKQ==" defer></script>
     <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/8cb4d071e661a1b14c1f51d79013d82572e3.js?ver=603ff" defer data-deferred="1"></script>
-    <script type='text/javascript' id='contact-form-7-js-extra' src="data:text/javascript;base64,dmFyIHdwY2Y3PXsiYXBpU2V0dGluZ3MiOnsicm9vdCI6Imh0dHBzOlwvXC90bGNsaWdodGluZy5jb20udm5cL3dwLWpzb25cL2NvbnRhY3QtZm9ybS03XC92MSIsIm5hbWVzcGFjZSI6ImNvbnRhY3QtZm9ybS03XC92MSJ9LCJjYWNoZWQiOiIxIn0=" defer></script>
-    <script data-optimized="1" type='text/javascript' src='wp-content/litespeed/js/933de93cd7c4c2335085b0aa5fc6e2cee73d.js?ver=6e2ce' id='contact-form-7-js' defer data-deferred="1"></script>
+    <!-- <script type='text/javascript' id='contact-form-7-js-extra' src="data:text/javascript;base64,dmFyIHdwY2Y3PXsiYXBpU2V0dGluZ3MiOnsicm9vdCI6Imh0dHBzOlwvXC90bGNsaWdodGluZy5jb20udm5cL3dwLWpzb25cL2NvbnRhY3QtZm9ybS03XC92MSIsIm5hbWVzcGFjZSI6ImNvbnRhY3QtZm9ybS03XC92MSJ9LCJjYWNoZWQiOiIxIn0=" defer></script>
+    <script data-optimized="1" type='text/javascript' src='wp-content/litespeed/js/933de93cd7c4c2335085b0aa5fc6e2cee73d.js?ver=6e2ce' id='contact-form-7-js' defer data-deferred="1"></script> -->
     <script data-optimized="1" type='text/javascript' src='wp-content/litespeed/js/1ee4b60f293670d844f355f6dc46c5611543.js?ver=6c561' id='eirudo-yt-responsive-js' defer data-deferred="1"></script>
     <script data-optimized="1" type='text/javascript' src='wp-content/litespeed/js/c1f6e3e61cc73f40d09d6edeb08ac8ee64fa.js?ver=ac8ee' id='jquery-blockui-js' defer data-deferred="1"></script>
     <script data-optimized="1" type='text/javascript' src='wp-content/litespeed/js/932fc3b98db90784e42c77532615a76d59cf.js?ver=5a76d' id='js-cookie-js' defer data-deferred="1"></script>
     <script type='text/javascript' id='woocommerce-js-extra' src="data:text/javascript;base64,dmFyIHdvb2NvbW1lcmNlX3BhcmFtcz17ImFqYXhfdXJsIjoiXC93cC1hZG1pblwvYWRtaW4tYWpheC5waHAiLCJ3Y19hamF4X3VybCI6IlwvP3djLWFqYXg9JSVlbmRwb2ludCUlIn0=" defer></script>
     <script data-optimized="1" type='text/javascript' src='wp-content/litespeed/js/8b19450ade8abafe266613421794fb684518.js?ver=4fb68' id='woocommerce-js' defer data-deferred="1"></script>
     <script type='text/javascript' id='wc-cart-fragments-js-extra' src="data:text/javascript;base64,dmFyIHdjX2NhcnRfZnJhZ21lbnRzX3BhcmFtcz17ImFqYXhfdXJsIjoiXC93cC1hZG1pblwvYWRtaW4tYWpheC5waHAiLCJ3Y19hamF4X3VybCI6IlwvP3djLWFqYXg9JSVlbmRwb2ludCUlIiwiY2FydF9oYXNoX2tleSI6IndjX2NhcnRfaGFzaF9iMzExODk2NmUzNTgxZGYyMTE1OTA3NWI2NmRjMDRhZSIsImZyYWdtZW50X25hbWUiOiJ3Y19mcmFnbWVudHNfYjMxMTg5NjZlMzU4MWRmMjExNTkwNzViNjZkYzA0YWUiLCJyZXF1ZXN0X3RpbWVvdXQiOiI1MDAwIn0=" defer></script>
-    <script data-optimized="1" type='text/javascript' src='wp-content/litespeed/js/624d53e00ee6806a65713ca5a9abc4f6689d.js?ver=bc4f6' id='wc-cart-fragments-js' defer data-deferred="1"></script>
-    <script data-optimized="1" type='text/javascript' src='wp-content/litespeed/js/5bae506fb641cbbd2a396f3694558864b14e.js?ver=58864' id='flatsome-live-search-js' defer data-deferred="1"></script>
+   
+   
     <script data-optimized="1" type='text/javascript' src='wp-content/litespeed/js/8d7c06f0bad431845a884bc14b52b055954f.js?ver=2b055' id='jquery-fancybox-js' defer data-deferred="1"></script>
     <script type='text/javascript' id='jquery-fancybox-js-after' src="data:text/javascript;base64,dmFyIGZiX3RpbWVvdXQsZmJfb3B0cz17J292ZXJsYXlTaG93JzohMCwnaGlkZU9uT3ZlcmxheUNsaWNrJzohMCwnc2hvd0Nsb3NlQnV0dG9uJzohMCwnbWFyZ2luJzoyMCwnY2VudGVyT25TY3JvbGwnOiExLCdlbmFibGVFc2NhcGVCdXR0b24nOiEwLCdhdXRvU2NhbGUnOiEwfTtpZih0eXBlb2YgZWFzeV9mYW5jeWJveF9oYW5kbGVyPT09J3VuZGVmaW5lZCcpe3ZhciBlYXN5X2ZhbmN5Ym94X2hhbmRsZXI9ZnVuY3Rpb24oKXtqUXVlcnkoJy5ub2ZhbmN5Ym94LGEud3AtYmxvY2stZmlsZV9fYnV0dG9uLGEucGluLWl0LWJ1dHRvbixhW2hyZWYqPSJwaW50ZXJlc3QuY29tL3Bpbi9jcmVhdGUiXSxhW2hyZWYqPSJmYWNlYm9vay5jb20vc2hhcmUiXSxhW2hyZWYqPSJ0d2l0dGVyLmNvbS9zaGFyZSJdJykuYWRkQ2xhc3MoJ25vbGlnaHRib3gnKTt2YXIgZmJfSU1HX3NlbGVjdD0nYVtocmVmKj0iLmpwZyJdOm5vdCgubm9saWdodGJveCxsaS5ub2xpZ2h0Ym94PmEpLGFyZWFbaHJlZio9Ii5qcGciXTpub3QoLm5vbGlnaHRib3gpLGFbaHJlZio9Ii5qcGVnIl06bm90KC5ub2xpZ2h0Ym94LGxpLm5vbGlnaHRib3g+YSksYXJlYVtocmVmKj0iLmpwZWciXTpub3QoLm5vbGlnaHRib3gpLGFbaHJlZio9Ii5wbmciXTpub3QoLm5vbGlnaHRib3gsbGkubm9saWdodGJveD5hKSxhcmVhW2hyZWYqPSIucG5nIl06bm90KC5ub2xpZ2h0Ym94KSxhW2hyZWYqPSIud2VicCJdOm5vdCgubm9saWdodGJveCxsaS5ub2xpZ2h0Ym94PmEpLGFyZWFbaHJlZio9Ii53ZWJwIl06bm90KC5ub2xpZ2h0Ym94KSc7alF1ZXJ5KGZiX0lNR19zZWxlY3QpLmFkZENsYXNzKCdmYW5jeWJveCBpbWFnZScpO3ZhciBmYl9JTUdfc2VjdGlvbnM9alF1ZXJ5KCcuZ2FsbGVyeSwud3AtYmxvY2stZ2FsbGVyeSwudGlsZWQtZ2FsbGVyeSwud3AtYmxvY2stamV0cGFjay10aWxlZC1nYWxsZXJ5Jyk7ZmJfSU1HX3NlY3Rpb25zLmVhY2goZnVuY3Rpb24oKXtqUXVlcnkodGhpcykuZmluZChmYl9JTUdfc2VsZWN0KS5hdHRyKCdyZWwnLCdnYWxsZXJ5LScrZmJfSU1HX3NlY3Rpb25zLmluZGV4KHRoaXMpKX0pO2pRdWVyeSgnYS5mYW5jeWJveCxhcmVhLmZhbmN5Ym94LGxpLmZhbmN5Ym94IGEnKS5lYWNoKGZ1bmN0aW9uKCl7alF1ZXJ5KHRoaXMpLmZhbmN5Ym94KGpRdWVyeS5leHRlbmQoe30sZmJfb3B0cyx7J3RyYW5zaXRpb25Jbic6J2VsYXN0aWMnLCdlYXNpbmdJbic6J2Vhc2VPdXRCYWNrJywndHJhbnNpdGlvbk91dCc6J2VsYXN0aWMnLCdlYXNpbmdPdXQnOidlYXNlSW5CYWNrJywnb3BhY2l0eSc6ITEsJ2hpZGVPbkNvbnRlbnRDbGljayc6ITEsJ3RpdGxlU2hvdyc6ITAsJ3RpdGxlUG9zaXRpb24nOidvdmVyJywndGl0bGVGcm9tQWx0JzohMCwnc2hvd05hdkFycm93cyc6ITAsJ2VuYWJsZUtleWJvYXJkTmF2JzohMCwnY3ljbGljJzohMX0pKX0pfTtqUXVlcnkoJ2EuZmFuY3lib3gtY2xvc2UnKS5vbignY2xpY2snLGZ1bmN0aW9uKGUpe2UucHJldmVudERlZmF1bHQoKTtqUXVlcnkuZmFuY3lib3guY2xvc2UoKX0pfTt2YXIgZWFzeV9mYW5jeWJveF9hdXRvPWZ1bmN0aW9uKCl7c2V0VGltZW91dChmdW5jdGlvbigpe2pRdWVyeSgnI2ZhbmN5Ym94LWF1dG8nKS50cmlnZ2VyKCdjbGljaycpfSwxMDAwKX07alF1ZXJ5KGVhc3lfZmFuY3lib3hfaGFuZGxlcik7alF1ZXJ5KGRvY3VtZW50KS5vbigncG9zdC1sb2FkJyxlYXN5X2ZhbmN5Ym94X2hhbmRsZXIpO2pRdWVyeShlYXN5X2ZhbmN5Ym94X2F1dG8p" defer></script>
     <script data-optimized="1" type='text/javascript' src='wp-content/litespeed/js/3ac80a1ed965a818872b393f5d6421729d69.js?ver=42172' id='jquery-easing-js' defer data-deferred="1"></script>
@@ -597,5 +551,57 @@
 </html> <!-- Page optimized by LiteSpeed Cache @2023-08-26 08:56:36 -->
 <!-- Page generated by LiteSpeed Cache 5.4 on 2023-08-26 08:56:36 -->
  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+ <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+ <style type="text/css">
+    #ui-id-1{
+        background: #fff;
+        z-index: 999;
+    }
+ </style>
+
+
+  <script type="text/javascript">
+        $(function() {
+            $("#kws").autocomplete({
+
+                minLength: 1,
+                
+                source: function(request, response) {
+                    $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+
+
+                    });
+                    $.ajax({
+
+                        url: "{{  route('sugest-click')}}",
+                        type: "POST",
+                        data: {
+                            "_token": "{{ csrf_token() }}",
+                            product:$('#kws').val()
+                        },
+                        dataType: "json",
+                        success: function (data) {
+                            var items = data;
+                            console.log(1);
+
+                            response(items);
+
+                            $('#ui-id-1').html();
+
+                            $('#ui-id-1').html(data);
+                        
+                        }
+                    });
+                },
+                html:true,
+            });
+        });
+    </script>
 @stack('script')
 
