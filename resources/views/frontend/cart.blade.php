@@ -4138,14 +4138,14 @@ input[type="radio"] {
   font-weight: normal;
 }
 .sex .radio input:checked ~ .icon:before {
-  background-color: var(--main-color);
+  background-color: #000;
   content: "";
   display: block;
   width: 5px;
   height: 5px;
   border-radius: 100%;
-  left: 4px;
-  top: 4px;
+  left: 2px;
+  top: 2px;
 }
 .radio .icon {
   border-radius: 50% !important;
@@ -4157,14 +4157,14 @@ input[type="radio"] {
   border-color: var(--main-color) !important;
 }
 .active .radio .icon:before {
-  background-color: var(--main-color) !important;
+  background-color: #000 !important;
   content: "";
   display: inline-block !important;
   width: 5px !important;
   height: 5px !important;
   border-radius: 50% !important;
-  left: 4px !important;
-  top: 4px !important;
+  left: 2px !important;
+  top: 2px !important;
   position: absolute !important;
 }
 .reset-pass {

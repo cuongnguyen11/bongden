@@ -10,6 +10,7 @@
 <?php 
     $meta_data = DB::table('contact')->get()->last();
     $contact = DB::table('feedback')->get()->last();
+    $social = DB::table('social')->get()->last();
 ?>
 
 @include('frontend.include.header', ['meta_data'=>$meta_data])
@@ -248,15 +249,23 @@
                         <div class="textwidget">
                             <p><strong style="margin-bottom: -10px; display: block; font-size: 120%; color: #fff;">LIÊN KẾT VỚI CHÚNG TÔI:</strong></p>
                             <div style="margin-top: 10px; display: inline-block;"><span style="font-size: 90%; color: #fff;">
-                                <a href="javascript:void(0)">
+                                <a href="{{ $social->Facebook??'#' }}">
 
                                     <img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMyIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDMzIDM0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjY2ZkNGRiIi8+PC9zdmc+" class="size-full wp-image-6454 alignleft" data-src="https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-53.png" alt="tlclighting" width="33" height="34" data-srcset="https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-53.png 33w, https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-53-31x31.png 31w" data-sizes="(max-width: 33px) 100vw, 33px" />
                                 </a> 
 
-                                <a href="javascript:void(0)">
+                                <a href="{{ $social->Instagram??'javascript:void(0)' }}">
                                     <img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMyIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDMzIDM0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjY2ZkNGRiIi8+PC9zdmc+" class="size-full wp-image-6455 alignleft" data-src="https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-54.png" alt="tlclighting" width="33" height="34" data-srcset="https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-54.png 33w, https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-54-31x31.png 31w" data-sizes="(max-width: 33px) 100vw, 33px" /></a>
-                                    <img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMyIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDMzIDM0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjY2ZkNGRiIi8+PC9zdmc+" class="size-full wp-image-6456 alignleft" data-src="https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-55.png" alt="tlclighting" width="33" height="34" data-srcset="https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-55.png 33w, https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-55-31x31.png 31w" data-sizes="(max-width: 33px) 100vw, 33px" /> 
-                                    <img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMyIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDMzIDM0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjY2ZkNGRiIi8+PC9zdmc+" class="size-full wp-image-6457 alignleft" data-src="https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-56.png" alt="tlclighting" width="33" height="34" data-srcset="https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-56.png 33w, https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-56-31x31.png 31w" data-sizes="(max-width: 33px) 100vw, 33px" /></span>
+
+                                    <a href="{{ $social->Twiter??'javascript:void(0)' }}">
+                                        <img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMyIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDMzIDM0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjY2ZkNGRiIi8+PC9zdmc+" class="size-full wp-image-6456 alignleft" data-src="https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-55.png" alt="tlclighting" width="33" height="34" data-srcset="https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-55.png 33w, https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-55-31x31.png 31w" data-sizes="(max-width: 33px) 100vw, 33px" /> 
+                                    </a> 
+
+
+                                    <a href="tel:{{ @$contact->hotline }}">
+                                        <img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMyIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDMzIDM0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjY2ZkNGRiIi8+PC9zdmc+" class="size-full wp-image-6457 alignleft" data-src="https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-56.png" alt="tlclighting" width="33" height="34" data-srcset="https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-56.png 33w, https://tlclighting.com.vn/wp-content/uploads/2020/09/HOME-PAGE-56-31x31.png 31w" data-sizes="(max-width: 33px) 100vw, 33px" /></span>
+                                    </a>
+                                    
                             </div>
                             <!-- <div class="fanpagefb" style="margin-top: 10px; display: inline-block; width: 100%;"><a href="#" target="_blank" rel="noopener noreferrer">
                                 <img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNTAiIGhlaWdodD0iMTkyIiB2aWV3Qm94PSIwIDAgMzUwIDE5MiI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2NmZDRkYiIvPjwvc3ZnPg==" class="aligncenter wp-image-9074 size-full" data-src="https://tlclighting.com.vn/wp-content/uploads/2022/01/footer.png" alt="footer-facebook" width="350" height="192" data-srcset="https://tlclighting.com.vn/wp-content/uploads/2022/01/footer.png 350w, https://tlclighting.com.vn/wp-content/uploads/2022/01/footer-300x165.png 300w, https://tlclighting.com.vn/wp-content/uploads/2022/01/footer-31x17.png 31w" data-sizes="(max-width: 350px) 100vw, 350px" /></a>
