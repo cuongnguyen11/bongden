@@ -26,7 +26,7 @@ class showController extends Controller
 
         $convert = ['{name}', '{address}', '{email}', '{phone_number}', '{orderId}', '{total_price}'];
 
-        $change  = ['{{ $name }}', '{{ $address }}', '{{ $email }}', '{{ $phone_number }}', '{{$total_price}}'];
+        $change  = ['{{ $name }}', '{{ $address }}', '{{ $email }}', '{{ $phone_number }}', '{{ $orderId }}', '{{$total_price}}'];
 
 
 
