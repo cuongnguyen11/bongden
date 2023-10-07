@@ -606,12 +606,14 @@
                                     </div> <input type="hidden" value="0" id="memory_curent"> <input type="hidden" value="0" id="usage_states_curent"> <input type="hidden" value="0" id="region_curent"> <input type="hidden" value="0" id="color_curent"> <input type="hidden" value="0" id="color_curent_old"> <input type="hidden" value="0" id="warranty_curent"> <input type="hidden" value="0" id="origin_curent"> <input type="hidden" value="0" id="species_curent"> <input type="hidden" value="0" id="price_extend"> <input type="hidden" value="3449000" id="basic_price"> <input type="hidden" value="4800000" id="basic_price_old"> <input type="hidden" value="5231" name="product_id" id="product_id">
                                 </div>
                                 <div class="frame_b_r">
+                                    @if(isset($other_product)) 
                                     <div class="products-list-related">
+
                                         <div class="tab-title cls">
                                             <div class="cat-title-main" id="characteristic-label"> <span>Sản phẩm liên quan</span> </div>
                                         </div>
                                         <div class="product_grid"> 
-                                            @if(isset($other_product)) 
+                                            
 
                                             <?php 
 
@@ -664,6 +666,7 @@
                                             @endif 
                                         </div>
                                     </div>
+                                    @endif
                                 </div>
                                 <div id="prodetails_tab20" class="prodetails_tab">
                                     <div class="tab_content_right">
