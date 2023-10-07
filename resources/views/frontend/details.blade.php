@@ -658,10 +658,11 @@
                                                 <div class="gift"> </div>
                                                 <div class="clear"></div>
                                             </div> 
-                                            
+                                            @endif
+                                            @endif 
                                             @endif 
                                             @endforeach 
-                                            @endif 
+                                            
                                         </div>
                                     </div>
                                     @endif
