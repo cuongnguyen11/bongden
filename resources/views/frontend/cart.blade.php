@@ -6058,7 +6058,7 @@ ul.menu-bottom li.level0 span.click-mobile.active {
 
            if(!regex.test(phoneNumber)){
             event.preventDefault();
-            alert('số điện thoại k đúng định dạng');
+            alert('số điện thoại k đúng định dạng, vui lòng kiểm tra lại');
             return false;
            }
            else{
