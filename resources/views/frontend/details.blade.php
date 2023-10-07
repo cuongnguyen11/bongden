@@ -647,16 +647,17 @@
                                             @foreach($other_product as $value) 
                                             @if($value->active==1 && $value->id != $data->id) 
                                             @if(!in_array($value->id, $list_product_hide) )
-                                            @if($value->active ===1)
+                                            @if($value->active===1)
                                             <div class="item">
                                                 <figure class="product_image "> <a href="{{ route('details', $value->Link) }}" title="{{ $value->Name }}"> <img class="lazy after-lazy" alt="{{ $value->Name }}" src="{{ asset($value->Image) }}" data-srcset="{{ asset($value->Image) }}"> </a> </figure>
                                                 <div> <a href="{{ route('details', $value->Link) }}" title="{{ $value->Name }}" class="name"> {{ $value->Name }} </a> </div>
                                                 <div class="price_arae">
-                                                    <div class="price_current">{{ str_replace(',' ,'.', number_format($value->Price))  }}₫</div> <!-- 
+                                                    <div class="price_current">{{ str_replace(',' ,'.', number_format($value->Price))  }}₫</div> <!-- <div class="price_old"><span>7.000.000₫</span></div> -->
                                                 </div>
                                                 <div class="gift"> </div>
                                                 <div class="clear"></div>
                                             </div> 
+                                            @endif
                                             @endif
                                             @endif 
                                             @endforeach 
