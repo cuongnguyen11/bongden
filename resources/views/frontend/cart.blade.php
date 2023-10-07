@@ -6038,7 +6038,34 @@ ul.menu-bottom li.level0 span.click-mobile.active {
 
 @push('script')
 
+
+
     <script type="text/javascript">
+
+        const form = $('form');
+
+        // Add an event listener for the submit event
+        form.on('submit', function(event) {
+          // Prevent the default form submission behavior
+          event.preventDefault();
+
+          // Return false to stop the form from submitting
+
+
+           const regex = /^(?:\+84|0)?([3|5|7|8|9]{1}[0-9]{8})$/i;
+
+           phoneNumber = $('#telephone_user').val();
+
+           if(!regex.test(phoneNumber)){
+            alert('số điện thoại k đúng định dạng');
+            return false;
+           }
+           else{
+            return;
+           }
+          
+          
+        });
         function removeProductCart(id) {
             $.ajaxSetup({
                 headers: {
