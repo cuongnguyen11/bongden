@@ -6047,7 +6047,7 @@ ul.menu-bottom li.level0 span.click-mobile.active {
         // Add an event listener for the submit event
         form.on('submit', function(event) {
           // Prevent the default form submission behavior
-          event.preventDefault();
+          
 
           // Return false to stop the form from submitting
 
@@ -6057,6 +6057,7 @@ ul.menu-bottom li.level0 span.click-mobile.active {
            phoneNumber = $('#telephone_user').val();
 
            if(!regex.test(phoneNumber)){
+            event.preventDefault();
             alert('số điện thoại k đúng định dạng');
             return false;
            }
