@@ -284,6 +284,8 @@ Route::group(['prefix' => 'admins','middleware' => 'auth'], function() {
 
     Route::post('/add-limit', 'AjaxController@addLimitProduct')->name('add-limit-product');
 
+    Route::post('/add-script-header', 'showController@addScriptHeader')->name('add-script-header');
+
     Route::post('/add-mul-ti-limit', 'AjaxController@addLimitProducts')->name('add-multi-limit-product');
 
     

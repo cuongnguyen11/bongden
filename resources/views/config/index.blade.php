@@ -11,6 +11,8 @@
 
     $info_cpn = DB::table('info_company')->get()->last();
 
+    $script_header = DB::table('script_header')->get()->last();
+
 ?>
 
 <style type="text/css">
@@ -29,6 +31,9 @@
      #fragment-5{
         display: none;
     }
+    #fragment-6{
+        display: none;
+    }
 </style>
 <div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
     <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
@@ -36,13 +41,14 @@
         
         <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="-1" aria-controls="fragment-0" aria-labelledby="ui-id-1" aria-selected="false"><a href="#fragment-0" class="a_fragment_1 ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1"><span>Thông tin website</span></a></li>
 
-        <li class="ui-state-default ui-corner-top" role="tab" tabindex="0" aria-controls="fragment-2" aria-labelledby="ui-id-3" aria-selected="true"><a href="#fragment-2" class="a_fragment_3 ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3"><span>Mạng xã hội</span></a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="0" aria-controls="fragment-2" aria-labelledby="ui-id-3" aria-selected="true"><a href="#fragment-2" class="a_fragment_3 ui-tabs-anchor" role="presentation" tabindex="-1"><span>Mạng xã hội</span></a></li>
 
-        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="fragment-3" aria-labelledby="ui-id-2" aria-selected="false"><a href="#fragment-1" class="a_fragment_2 ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2"><span>Thông tin liên hệ</span></a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="fragment-3" aria-labelledby="ui-id-2" aria-selected="false"><a href="#fragment-1" class="a_fragment_2 ui-tabs-anchor" role="presentation" tabindex="-1"><span>Thông tin liên hệ</span></a></li>
 
-        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="fragment-4" aria-labelledby="ui-id-2" aria-selected="false"><a href="#fragment-1" class="a_fragment_2 ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4"><span>Form email</span></a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="fragment-4" aria-labelledby="ui-id-2" aria-selected="false"><a href="#fragment-1" class="a_fragment_2 ui-tabs-anchor" role="presentation" tabindex="-1" ><span>Form email</span></a></li>
 
-        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="fragment-5" aria-labelledby="ui-id-2" aria-selected="false"><a href="#fragment-1" class="a_fragment_2 ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4"><span>Thông tin doanh nghiệp</span></a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="fragment-5" aria-labelledby="ui-id-2" aria-selected="false"><a href="#fragment-1" class="a_fragment_2 ui-tabs-anchor" role="presentation" tabindex="-1" ><span>Thông tin doanh nghiệp</span></a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="fragment-6" aria-labelledby="ui-id-2" aria-selected="false"><a href="#fragment-1" class="a_fragment_2 ui-tabs-anchor" role="presentation" tabindex="-1" ><span>script header</span></a></li>
 
         
     </ul>
@@ -248,6 +254,36 @@
 
            
            
+
+            <div class="button">
+                <button type="submit" class="btn btn-primary update">Update</button>
+            </div>
+        </div>
+    </form>
+
+    <form method="post" action="{{ route('add-script-header') }}">
+        @csrf
+        <div id="fragment-6" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
+            <div class="form-group " id="config_18">
+                <label class="col-sm-2 col-xs-12 control-label">script_head</label>
+                <div class="col-sm-9 col-xs-12">
+
+                    <textarea name="script_header" cols="70" rows="10">{{  @$script_header->script_header }}</textarea>
+                                                 
+                </div>
+            </div>
+            <div class="form-group " id="config_171">
+                <label class="col-sm-2 col-xs-12 control-label">script_body</label>
+                <div class="col-sm-9 col-xs-12">
+                    <textarea name="script_body" cols="70" rows="10">{{  @$script_header->script_body }}</textarea>                            
+                </div>
+            </div>
+            <div class="form-group " id="config_172">
+                <label class="col-sm-2 col-xs-12 control-label">Copy right</label>
+                <div class="col-sm-9 col-xs-12">
+                    <input class="form-control" type="text" name="copyright" value="{{  @$script_header->copyright }}" size="70" id="meta_des">                           
+                </div>
+            </div>
 
             <div class="button">
                 <button type="submit" class="btn btn-primary update">Update</button>

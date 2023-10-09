@@ -8,6 +8,11 @@
     <link rel="profile" href="https://gmpg.org/xfn/11" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <?php 
+
+        $script_header = DB::table('script_header')->get()->last();
+
+    ?>
     <title>{{ !empty($data->Name)?$data->Name:$meta_data->title??'' }}</title>
 
     <meta name="description" content="{{ !empty($data->Name)?$data->Name:$meta_data->meta_des??'' }}" />
@@ -112,4 +117,8 @@
         /** Mega Menu CSS: fs **/
     </style>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLHw5SHYnlonnbDFHybH75P7SV94NqNqY&amp;callback=initMap&amp;libraries=places" type="text/javascript"></script>
+
+    {{ @$script_header->script_header }}
+
+    {{ @$script_header->script_body }}
 </head>

@@ -87,6 +87,17 @@ class showController extends Controller
         
     }
 
+    public function addScriptHeader(Request $request)
+    {
+        $input = $request->all();
+
+        unset($input['_token']);
+
+        DB::table('script_header')->insert($input);
+
+        return back();
+    }
+
     public function deleteLinkAdd(Request $request)
     {
         $id = $request->id;
