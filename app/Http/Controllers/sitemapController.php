@@ -12,7 +12,7 @@ class sitemapController extends Controller
 {
    public function index()
    {
-       $products = product::orderBy('id', 'desc')->take(120);
+       $products = product::orderBy('id', 'desc')->take(120)->get();
 
         return response()->view('sitemap.index', [
             'products' => $products,
