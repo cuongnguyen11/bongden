@@ -4,7 +4,7 @@
     @if(isset($products))
     @foreach($products as $value)
         <sitemap>
-            <loc>{{ route('details', $value->Links)  }}</loc>
+            <loc>https://voisentam.com/{{ $value->Links }}</loc>
             <lastmod>{{ Carbon\Carbon::now()->format('Y-m-d') }}</lastmod>
         </sitemap>
     @endforeach    
