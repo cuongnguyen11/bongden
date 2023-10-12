@@ -15,7 +15,7 @@ class sitemapController extends Controller
        $products = product::orderBy('id', 'desc')->take(120);
 
         return response()->view('sitemap.index', [
-            'arr_number' => $products,
+            'products' => $products,
         ])->header('Content-Type', 'text/xml');
 
    }
