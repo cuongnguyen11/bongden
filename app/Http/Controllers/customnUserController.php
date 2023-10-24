@@ -24,7 +24,7 @@ class customnUserController extends Controller
 
             $validatedData = $request->validate([
                 'email' => 'required|unique:email|max:500',
-                'body' => 'required',
+                'password' => 'required',
                 'name' => 'required',
             ]);
 
@@ -32,6 +32,7 @@ class customnUserController extends Controller
                 
                 return redirect()->back();
             }
+
 
             $user = new User();
             $email = $request->email;
