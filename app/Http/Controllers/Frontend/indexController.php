@@ -13,6 +13,8 @@ use Carbon\Carbon;
 use Session;
 use App\Models\filter;
 
+use App\Models\metaSeo;
+
 use Auth;
 use DB;
 
