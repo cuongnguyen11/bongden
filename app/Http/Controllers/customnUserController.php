@@ -21,6 +21,18 @@ class customnUserController extends Controller
     public function addUser(Request $request)
     {
         if(Auth::user()->permision ==3){
+
+            $validatedData = $request->validate([
+                'email' => 'required|unique:email|max:500',
+                'body' => 'required',
+                'name' => 'required',
+            ]);
+
+            if ($validatedData->fails()) {
+                
+                return redirect()->back();
+            }
+
             $user = new User();
             $email = $request->email;
             $password = bcrypt($request->password);
