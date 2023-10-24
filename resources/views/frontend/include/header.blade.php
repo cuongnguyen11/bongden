@@ -12,7 +12,7 @@
         $script_header = DB::table('script_header')->get()->last();
 
     ?>
-    <title>{{ !empty($data->Name)?$data->Name:$meta_data->title??'' }}</title>
+    <title>{{ !empty($data->Name)?$data->Name:$meta_data->meta_title??'' }}</title>
 
     <meta name="description" content="{{ !empty($data->Name)?$data->Name:$meta_data->meta_des??'' }}" />
 
@@ -20,10 +20,9 @@
     <link rel="canonical" href="index.html" />
     <meta property="og:locale" content="vi_VN" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Công ty Cổ phần tập đoàn TLC Việt Nam" />
-    <meta property="og:description" content="TLC Lighting tự hào là đơn vị sản xuất, lắp ráp có tốc độ phát triển nhanh nhất trên thị trường đèn LED mang thương hiệu Việt" />
-    <meta property="og:url" content="https://tlclighting.com.vn/" />
-    <meta property="og:site_name" content="Tập đoàn TLC Việt Nam" />
+    <meta property="og:title" content="{{ $meta_data->title??'' }}" />
+    <meta property="og:description" content="{{ $meta_data->title??'' }}" />
+
     <meta property="article:modified_time" content="2023-04-25T03:34:48+00:00" />
     <meta property="og:image" content="" />
     <meta property="og:image:width" content="1001" />
