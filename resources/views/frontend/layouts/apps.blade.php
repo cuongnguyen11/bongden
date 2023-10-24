@@ -106,7 +106,7 @@
                                             </div>
                                         </div>
                                         <div class="top012" style=" display: inline-block;    margin-left: 10px; "> 
-                                            <img data-lazyloaded="1" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="https://tlclighting.com.vn/wp-content/uploads/2021/12/icon-02.svg" style="width: 35px;height: 35px;border-radius: 50%;background: #00427e;padding: 7px;position: relative;z-index: 1;    display: inline-block;" alt="tlclighting"> <a style="font-family: Montserrat, sans-serif!important; border: solid 2px #00427e; border-radius: 15px; padding: 5px 15px 5px 25px; margin-left: -20px; color: #fd0b0b; font-weight: 600; position: relative; z-index: 0; " href="tel:18006192"> 0867935899<a></div>
+                                            <img data-lazyloaded="1" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="https://tlclighting.com.vn/wp-content/uploads/2021/12/icon-02.svg" style="width: 35px;height: 35px;border-radius: 50%;background: #00427e;padding: 7px;position: relative;z-index: 1;    display: inline-block;" alt="tlclighting"> <a style="font-family: Montserrat, sans-serif!important; border: solid 2px #00427e; border-radius: 15px; padding: 5px 15px 5px 25px; margin-left: -20px; color: #fd0b0b; font-weight: 600; position: relative; z-index: 0; " href="tel:{{ @$contact->hotline }}"> {{ @$contact->hotline }}<a></div>
                                     </div>
 
 
