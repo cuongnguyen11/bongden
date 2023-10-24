@@ -11,17 +11,18 @@
 
         $script_header = DB::table('script_header')->get()->last();
 
+       
     ?>
-    <title>{{ !empty($data->Name)?$data->Name:$meta_data->meta_title??'' }}</title>
+    <title>{{ !empty($data->Name)?$data->Name:$meta->meta_title??'' }}</title>
 
-    <meta name="description" content="{{ !empty($data->Name)?$data->Name:$meta_data->meta_des??'' }}" />
+    <meta name="description" content="{{ !empty($data->Name)?$data->Name:$meta_data->meta_title??'' }}" />
 
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <link rel="canonical" href="index.html" />
+   
     <meta property="og:locale" content="vi_VN" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="{{ $meta_data->title??'' }}" />
-    <meta property="og:description" content="{{ $meta_data->title??'' }}" />
+    <meta property="og:title" content="{{ $meta_data->meta_og_title??'' }}" />
+    <meta property="og:description" content="{{  $meta_data->meta_og_content??'' }}" />
 
     <meta property="article:modified_time" content="2023-04-25T03:34:48+00:00" />
     <meta property="og:image" content="" />

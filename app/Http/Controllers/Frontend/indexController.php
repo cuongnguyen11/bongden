@@ -33,15 +33,16 @@ class indexController extends Controller
 
         $max_number = $Group_product->max_number??16;
 
-       
         $data = [];
+
+        $meta = metaSeo::find(237);
 
         if(!empty($ar_id)){
 
             $data = product::whereIn('id', $ar_id)->where('active', 1)->orderBy('id', 'desc')->take($max_number)->get();
         }
 
-        return view('frontend.index', compact('slogan', 'data', 'details'));
+        return view('frontend.index', compact('slogan', 'data', 'details','meta'));
     }
 
 

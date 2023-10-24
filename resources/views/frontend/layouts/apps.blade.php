@@ -14,7 +14,7 @@
    
 ?>
 
-@include('frontend.include.header', ['meta_data'=>$meta_data])
+@include('frontend.include.header', ['meta_data'=>$meta_data, 'meta'=>$meta])
 
 <style type="text/css">
     .mobile-add-cart{
