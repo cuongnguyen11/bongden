@@ -23,7 +23,7 @@ class customnUserController extends Controller
         if(Auth::user()->permision ==3){
 
             $validatedData = $request->validate([
-                'email' => 'required|unique:email|max:500',
+                'email' => 'required|unique:users,email|max:500',
                 'password' => 'required',
                 'name' => 'required',
             ]);
