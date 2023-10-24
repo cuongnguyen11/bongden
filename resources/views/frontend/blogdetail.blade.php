@@ -37,7 +37,7 @@
                 </article>
                 <div id="comments" class="comments-area"></div>
             </div>
-            @include('include.sizebar');
+            @include('include.sizebar')
             
             
         </div>
