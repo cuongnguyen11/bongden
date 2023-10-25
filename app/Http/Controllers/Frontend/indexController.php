@@ -106,7 +106,8 @@ class indexController extends Controller
 
     public function showCart()
     {
-        return view('frontend.cart');
+        $meta = metaSeo::find(237);
+        return view('frontend.cart', compact('meta'));
     }
 
     public function addClick(Request $request)
