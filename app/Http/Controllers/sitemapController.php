@@ -12,17 +12,14 @@ class sitemapController extends Controller
 {
    public function index()
    {
-       $products = product::orderBy('id', 'desc')->limit(120)->get();
 
-        return response()->view('sitemap.index', [
-            'products' => $products,
-        ])->header('Content-Type', 'text/xml');
-
+        return response()->view('sitemap.index')->header('Content-Type', 'text/xml');
+      
    }
 
    public function sitemapChildProduct()
    {
-    $product = product::take(160)->OrderBy('id', 'desc')->get();
+    $product = product::take(120)->OrderBy('id', 'desc')->get();
 
        return response()->view('sitemap.child', [
             'product' => $product,

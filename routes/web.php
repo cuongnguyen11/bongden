@@ -94,9 +94,8 @@ Route::post('login-Fe', 'AjaxController@loginClientsFe')->name('login-Fe');
 Route::get('logout-Fe', 'AjaxController@logout')->name('logout-Fe');
 
 
-Route::get('sitemap_pc.xml', 'sitemapController@index');
 
-// Route::get('sitemap_pc60.xml', 'sitemapController@sitemapChildProduct');
+Route::get('sitemap_pc.xml', 'sitemapController@sitemapChildProduct');
 // Route::get('sitemap_pc553.xml', 'sitemapController@sitemapChildProduct');
 
 
