@@ -11,7 +11,7 @@
     $meta_data = DB::table('contact')->get()->last();
     $contact = DB::table('feedback')->get()->last();
     $social = DB::table('social')->get()->last();
-   
+    $meta   = $meta??'';
 ?>
 
 @include('frontend.include.header', ['meta_data'=>$meta_data, 'meta'=>$meta])

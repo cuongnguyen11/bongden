@@ -12,8 +12,8 @@ class sitemapController extends Controller
 {
    public function index()
    {
-        $meta = '';
-        return response()->view('sitemap.index', compact('meta'))->header('Content-Type', 'text/xml');
+        
+        return response()->view('sitemap.index')->header('Content-Type', 'text/xml');
       
    }
 
