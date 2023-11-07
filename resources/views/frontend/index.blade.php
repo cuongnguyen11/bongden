@@ -78,7 +78,8 @@
                                         <p class="name product-title woocommerce-loop-product__title">
                                             <a href="{{ route('details', $value->Link) }}">{{ $value->Name  }}</a></p>
                                     </div>
-                                    <div class="price-wrapper"> <span class="price"><span class="woocommerce-Price-amount amount"><bdi>{{ str_replace(',' ,'.', number_format($value->Price)) }}&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></bdi></span></span></div>
+                                    <div class="price-wrapper"> <span class="price"><span class="woocommerce-Price-amount amount"><bdi>
+                                        {{ str_replace(',' ,'.', number_format($value->Price)) }}&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></bdi></span></span></div>
                                 </div>
                             </div>
                         </div>
