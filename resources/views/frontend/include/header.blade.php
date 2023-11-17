@@ -11,7 +11,6 @@
 
         $script_header = DB::table('script_header')->get()->last();
 
-       
     ?>
     <title>{{ !empty($data->Name)?$data->Name:$meta->meta_title??'' }}</title>
 
@@ -117,7 +116,7 @@
     </style>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLHw5SHYnlonnbDFHybH75P7SV94NqNqY&amp;callback=initMap&amp;libraries=places" type="text/javascript"></script>
 
-    {{ @$script_header->script_header }}
+    {!! @$script_header->script_header !!}
 
     {{ @$script_header->script_body }}
 </head>
