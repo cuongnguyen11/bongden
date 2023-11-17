@@ -118,5 +118,5 @@
 
     {!! @$script_header->script_header !!}
 
-    {{ @$script_header->script_body }}
+    {!! @$script_header->script_body !!}
 </head>
